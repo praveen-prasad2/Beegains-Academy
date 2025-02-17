@@ -1,5 +1,12 @@
-import App from "@/pages/_app";
+"use client";
 
 
 
-export default App
+export default function Page() {
+  return (
+    <>
+
+      <h1 className="bg-red">Beegains Academy Home Page</h1>
+    </>
+  );
+}
