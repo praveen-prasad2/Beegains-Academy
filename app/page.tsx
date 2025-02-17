@@ -1,12 +1,14 @@
 "use client";
+import React from 'react'
 
 
-
-export default function Page() {
+function page() {
   return (
-    <>
-
-      <h1 className="bg-red">Beegains Academy Home Page</h1>
-    </>
-  );
+    <div>
+       <h1 className="text-bee-orange">Beegains Academy Home Page</h1>
+    </div>
+  )
 }
+
+export default page
+
