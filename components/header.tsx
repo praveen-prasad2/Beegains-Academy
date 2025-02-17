@@ -20,7 +20,7 @@ function Header() {
       </div>
 
       {/* Menu */}
-      <div className="bg-[#D9D9D9] text-[15px] w-[365px] h-[52px] rounded-[50px] flex justify-around items-center px-1">
+      <div className="bg-[#D9D9D9] text-[15px] font-[400] w-[365px] h-[52px] rounded-[50px] flex justify-around items-center px-1">
         {menuItems.map((item) => (
           <Link
             key={item.name}

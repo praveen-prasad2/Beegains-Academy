@@ -1,7 +1,8 @@
 "use client";
 
 import Header from "@/components/header";
-import { Montserrat } from "next/font/google";
+import { Montserrat } from 'next/font/google';
+
 import '../styles/globals.css';
 
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={montserrat.className}>
         
         <Header/>
         
