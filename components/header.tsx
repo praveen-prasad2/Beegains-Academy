@@ -13,10 +13,17 @@ function Header() {
   ];
 
   return (
-    <div className="flex flex-row justify-between items-center p-4">
+    <div className="flex flex-row justify-between items-center p-4 bg-transparent absolute left-0 right-0">
       {/* Logo */}
       <div>
-        <img src="/academy-logo.png" alt="Academy Logo" className=" h-[50px]" />
+        <Link href={"#"}>
+          {" "}
+          <img
+            src="/academy-logo.png"
+            alt="Academy Logo"
+            className=" h-[50px] cursor-pointer"
+          />
+        </Link>
       </div>
 
       {/* Menu */}
@@ -30,7 +37,13 @@ function Header() {
             }`}
             onClick={() => setActive(item.name)}
           >
-            {active === item.name && <img src={item.icon} alt={`${item.name} icon`} className="w-5 h-5" />}
+            {active === item.name && (
+              <img
+                src={item.icon}
+                alt={`${item.name} icon`}
+                className="w-5 h-5"
+              />
+            )}
             {item.name}
           </Link>
         ))}
@@ -38,8 +51,9 @@ function Header() {
 
       {/* Talk Button */}
       <div>
-
-        <button className="bg-bee-black w-[151px] h-[52px] text-white  flex rounded-[50px] justify-center items-center gap-2">Let's Talk <img src="/letstalk.svg" alt="" /></button>
+        <button className="bg-bee-black w-[151px] h-[52px] text-white  flex rounded-[50px] justify-center items-center gap-2">
+          Let's Talk <img src="/letstalk.svg" alt="" />
+        </button>
       </div>
     </div>
   );

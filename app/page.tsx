@@ -1,11 +1,12 @@
 "use client";
 import React from 'react'
+import Hero from "../components/Home/hero"
 
 
 function page() {
   return (
     <div>
-       <h1 className="text-bee-orange">Beegains Academy Home Page</h1>
+       <Hero/>
     </div>
   )
 }
