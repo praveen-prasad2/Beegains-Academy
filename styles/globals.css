@@ -10,7 +10,28 @@ body {
   background-size: cover;
   background-repeat: repeat;
   padding-right: 110px;
-  padding-left:110px;
+  padding-left: 110px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 @layer base {
