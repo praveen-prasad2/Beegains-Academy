@@ -21,7 +21,7 @@ const FlipBook = () => {
   };
 
   const handleDrag = (
-    _: MouseEvent | TouchEvent | PointerEvent,
+    _event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
   ) => {
     const progress = Math.min(Math.max(info.offset.x / 200, -1), 1);
@@ -29,8 +29,7 @@ const FlipBook = () => {
   };
 
   const handleDragEnd = (
-    _: MouseEvent | TouchEvent | PointerEvent,
-    info: PanInfo
+    _event: MouseEvent | TouchEvent | PointerEvent
   ) => {
     setIsDragging(false);
     const threshold = 0.3;
@@ -87,24 +86,12 @@ const FlipBook = () => {
             alt={`Page ${currentPage}`}
             className="w-full h-full object-cover"
           />
-
-          {/* Page edge shadow */}
-          <div
-            className="absolute right-0 top-0 w-4 h-full"
-            style={{
-              background:
-                "linear-gradient(to right, transparent, rgba(0,0,0,0.1))",
-            }}
-          />
         </div>
 
         {/* Right page with curl effect */}
         <motion.div
           className="absolute right-0 top-0 w-1/2 h-full origin-left"
-          style={{
-            perspective: 2000,
-            transformStyle: "preserve-3d",
-          }}
+          style={{ perspective: 2000, transformStyle: "preserve-3d" }}
           animate={controls}
           drag="x"
           dragConstraints={{ left: -200, right: 200 }}
@@ -129,38 +116,7 @@ const FlipBook = () => {
               className="w-full h-full object-cover"
             />
           </motion.div>
-
-          {/* Back of page */}
-          <motion.div
-            className="absolute inset-0 bg-white rounded-r-lg overflow-hidden"
-            style={{
-              backfaceVisibility: "hidden",
-              transform: "rotateY(180deg)",
-              boxShadow: isDragging
-                ? `${getCurlShadow(-dragProgress)} 10px 0 15px`
-                : "none",
-            }}
-          >
-            <Image
-              src={pages[currentPage + 1]}
-              alt={`Page ${currentPage + 2}`}
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
         </motion.div>
-
-        {/* Page curl shadow overlay */}
-        {isDragging && (
-          <div
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background: `linear-gradient(${
-                dragProgress > 0 ? "to left" : "to right"
-              }, 
-                transparent, rgba(0,0,0,${Math.abs(dragProgress) * 0.1}))`,
-            }}
-          />
-        )}
       </div>
 
       {/* Navigation controls */}
