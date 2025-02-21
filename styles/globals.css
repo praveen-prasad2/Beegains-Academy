@@ -4,15 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 body {
   font-family: "Montserrat", serif;
   background-image: url("/global-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
-
 }
-
 
 @layer base {
   :root {
@@ -69,7 +66,6 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
-
 
 @layer base {
   * {
