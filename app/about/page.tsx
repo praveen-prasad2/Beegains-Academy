@@ -3,15 +3,15 @@
 import React, { useState } from "react";
 import { motion, useAnimation, PanInfo } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 // Define pages array
 const pages = [
-
   "/page1.png",
   "/page2.png",
   "/page3.png",
   "/page4.png",
-  "/page5.png"
+  "/page5.png",
 ];
 
 const FlipBook = () => {
@@ -26,15 +26,21 @@ const FlipBook = () => {
     return `rgba(0, 0, 0, ${intensity})`;
   };
 
-  const handleDrag = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+  const handleDrag = (
+    _: MouseEvent | TouchEvent | PointerEvent,
+    info: PanInfo
+  ) => {
     const progress = Math.min(Math.max(info.offset.x / 200, -1), 1);
     setDragProgress(progress);
   };
 
-  const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo) => {
+  const handleDragEnd = (
+    _: MouseEvent | TouchEvent | PointerEvent,
+    info: PanInfo
+  ) => {
     setIsDragging(false);
     const threshold = 0.3;
-    
+
     if (Math.abs(dragProgress) > threshold) {
       if (dragProgress > 0 && currentPage > 0) {
         prevPage();
@@ -42,7 +48,7 @@ const FlipBook = () => {
         nextPage();
       }
     }
-    
+
     setDragProgress(0);
   };
 
@@ -53,9 +59,9 @@ const FlipBook = () => {
         transition: {
           duration: 0.8,
           ease: [0.4, 0, 0.2, 1],
-        }
+        },
       });
-      setCurrentPage(prev => prev + 1);
+      setCurrentPage((prev) => prev + 1);
       controls.set({ rotateY: 0 });
     }
   };
@@ -67,9 +73,9 @@ const FlipBook = () => {
         transition: {
           duration: 0.8,
           ease: [0.4, 0, 0.2, 1],
-        }
+        },
       });
-      setCurrentPage(prev => prev - 1);
+      setCurrentPage((prev) => prev - 1);
       controls.set({ rotateY: 0 });
     }
   };
@@ -79,20 +85,21 @@ const FlipBook = () => {
       <div className="relative w-[1000px] h-[700px] bg-white rounded-lg shadow-2xl perspective-2000">
         {/* Book binding effect */}
         <div className="absolute left-1/2 top-0 w-8 h-full bg-gradient-to-r from-gray-300 via-gray-200 to-transparent transform -translate-x-1/2 z-20" />
-        
+
         {/* Left page */}
         <div className="absolute left-0 top-0 w-1/2 h-full bg-white overflow-hidden rounded-l-lg">
-          <img 
+          <Image
             src={pages[Math.max(0, currentPage - 1)]}
             alt={`Page ${currentPage}`}
             className="w-full h-full object-cover"
           />
-          
+
           {/* Page edge shadow */}
-          <div 
+          <div
             className="absolute right-0 top-0 w-4 h-full"
             style={{
-              background: "linear-gradient(to right, transparent, rgba(0,0,0,0.1))"
+              background:
+                "linear-gradient(to right, transparent, rgba(0,0,0,0.1))",
             }}
           />
         </div>
@@ -102,7 +109,7 @@ const FlipBook = () => {
           className="absolute right-0 top-0 w-1/2 h-full origin-left"
           style={{
             perspective: 2000,
-            transformStyle: "preserve-3d"
+            transformStyle: "preserve-3d",
           }}
           animate={controls}
           drag="x"
@@ -117,10 +124,12 @@ const FlipBook = () => {
             className="absolute inset-0 bg-white rounded-r-lg overflow-hidden"
             style={{
               backfaceVisibility: "hidden",
-              boxShadow: isDragging ? `${getCurlShadow(dragProgress)} -10px 0 15px` : "none"
+              boxShadow: isDragging
+                ? `${getCurlShadow(dragProgress)} -10px 0 15px`
+                : "none",
             }}
           >
-            <img 
+            <Image
               src={pages[currentPage]}
               alt={`Page ${currentPage + 1}`}
               className="w-full h-full object-cover"
@@ -133,10 +142,12 @@ const FlipBook = () => {
             style={{
               backfaceVisibility: "hidden",
               transform: "rotateY(180deg)",
-              boxShadow: isDragging ? `${getCurlShadow(-dragProgress)} 10px 0 15px` : "none"
+              boxShadow: isDragging
+                ? `${getCurlShadow(-dragProgress)} 10px 0 15px`
+                : "none",
             }}
           >
-            <img 
+            <Image
               src={pages[currentPage + 1]}
               alt={`Page ${currentPage + 2}`}
               className="w-full h-full object-cover"
@@ -146,11 +157,13 @@ const FlipBook = () => {
 
         {/* Page curl shadow overlay */}
         {isDragging && (
-          <div 
+          <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: `linear-gradient(${dragProgress > 0 ? 'to left' : 'to right'}, 
-                transparent, rgba(0,0,0,${Math.abs(dragProgress) * 0.1}))`
+              background: `linear-gradient(${
+                dragProgress > 0 ? "to left" : "to right"
+              }, 
+                transparent, rgba(0,0,0,${Math.abs(dragProgress) * 0.1}))`,
             }}
           />
         )}
