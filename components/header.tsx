@@ -90,7 +90,7 @@ function Header() {
       {/* Talk Button */}
       <div className="hidden md:flex">
         <button className="bg-bee-black w-[151px] h-[52px] text-white flex rounded-[50px] justify-center items-center gap-2">
-          Let's Talk <Image src="/letstalk.svg" width={16} height={16} alt="" />
+          Lets Talk <Image src="/letstalk.svg" width={16} height={16} alt="" />
         </button>
       </div>
     </div>
