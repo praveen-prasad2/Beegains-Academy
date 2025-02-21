@@ -62,9 +62,9 @@ function Header() {
         <Image
           src={menuOpen ? "/close-icon.svg" : "/menu-icon.svg"}
           alt="Menu Icon"
-          width={28}
-          height={28}
-          className="w-7 h-7"
+          width={34}
+          height={34}
+          className="w-10 h-10"
         />
       </button>
 
