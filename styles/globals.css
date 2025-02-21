@@ -7,8 +7,10 @@
 body {
   font-family: "Montserrat", serif;
   background-image: url("/global-bg.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: repeat;
+  padding-right: 110px;
+  padding-left:110px;
 }
 
 @layer base {
