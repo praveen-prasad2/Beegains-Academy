@@ -2,10 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
 
+
 function ReasonsContainer() {
   return (
     <>
-      <div>
+      <div className="flex flex-col gap-[100px]">
         {/* Section 1 Content  */}
         <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
           <div className="w-full  sm:w-2/3">
@@ -43,7 +44,13 @@ function ReasonsContainer() {
         </div>
 
         {/* Section 2 and Line Animation  */}
-        <div></div>
+        <div>
+          <h1 className="text-[50px] leading-[1] capitalize ">
+            Here are a few reasons why you <br /> should choose{" "}
+            <span className="text-bee-orange font-[700]">Beegains Academy</span>
+          </h1>
+
+        </div>
       </div>
     </>
   );
