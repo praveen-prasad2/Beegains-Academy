@@ -7,7 +7,7 @@ function ReasonsContainer() {
     <>
       <div>
         {/* Section 1 Content  */}
-        <div className="flex sm:flex-col">
+        <div className="flex flex-row sm:flex-col">
           <div className="w-2/3">
             <h1 className="text-[58px] font-[700] uppercase leading-[1]">
               We provide Intensive
