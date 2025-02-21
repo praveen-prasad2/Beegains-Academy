@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   const [active, setActive] = useState("Home");
@@ -18,7 +19,7 @@ function Header() {
       <div>
         <Link href={"#"}>
           {" "}
-          <img
+          <Image
             src="/academy-logo.png"
             alt="Academy Logo"
             className=" h-[50px] cursor-pointer"
@@ -38,7 +39,7 @@ function Header() {
             onClick={() => setActive(item.name)}
           >
             {active === item.name && (
-              <img
+              <Image
                 src={item.icon}
                 alt={`${item.name} icon`}
                 className="w-5 h-5"
@@ -52,11 +53,11 @@ function Header() {
       {/* Talk Button */}
       <div>
         <button className="bg-bee-black w-[151px] h-[52px] text-white  flex rounded-[50px] justify-center items-center gap-2">
-          Let's Talk <img src="/letstalk.svg" alt="" />
+          Lets Talk <Image src="/letstalk.svg" alt="" />
         </button>
       </div>
     </div>
   );
 }
 
-export default Header
+export default Header;
