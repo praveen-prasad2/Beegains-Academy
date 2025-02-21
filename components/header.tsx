@@ -14,7 +14,7 @@ function Header() {
   ];
 
   return (
-    <div className="flex flex-row justify-between items-center pt-5 pr-[110px] pl-[110px] bg-transparent absolute left-0 right-0 ">
+    <div className="flex flex-row justify-between items-center pt-5 pr-[110] pl-[110] bg-transparent absolute left-0 right-0 sm:pr-[20] sm:pl-[20]">
       {/* Logo */}
       <div>
         <Link href={"#"}>
