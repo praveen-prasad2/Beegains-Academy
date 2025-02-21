@@ -6,13 +6,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 // Define pages array
-const pages = [
-  "/page1.png",
-  "/page2.png",
-  "/page3.png",
-  "/page4.png",
-  "/page5.png",
-];
+const pages = ["/page1.png", "/page2.png", "/page3.png", "/page4.png"];
 
 const FlipBook = () => {
   const [currentPage, setCurrentPage] = useState(0);
