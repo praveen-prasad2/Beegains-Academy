@@ -40,50 +40,50 @@ function ReasonsContainer() {
       description:
         "Exposure to a high energy environment full of working professionals showcasing their best work, day in day out for passionate tech professionals.",
       style: {
-        left: '20%',
-        top: '6%'
-      }
+        left: "20%",
+        top: "6%",
+      },
     },
     {
       title: "Industry Exposure:",
       description:
         "Forge valuable connections with industry leaders, offering potential exposure and learning of unmatched quality.",
       style: {
-        left: '75%',
-        top: '30%'
-      }
+        left: "94%",
+        top: "35%",
+      },
     },
     {
       title: "Practical, Hands-On Learning:",
       description:
         "Deep hands-on experience with industry-standard tools and real-world projects.",
       style: {
-        left: '65%',
-        top: '50%'
-      }
+        left: "79%",
+        top: "55%",
+      },
     },
     {
       title: "Focus On Innovation & Creativity:",
       description:
         "Stay ahead of the curve with a curriculum that emphasizes cutting-edge digital marketing trends and technologies.",
       style: {
-        left: '45%',
-        top: '70%'
-      }
+        left: "50%",
+        top: "76%",
+      },
     },
     {
       title: "Expert Faculty:",
       description:
         "Learn from experienced industry professionals who bring real-world expertise to the classroom.",
       style: {
-        left: '70%',
-        top: '90%'
-      }
+        left: "88%",
+        top: "102%",
+      },
     },
   ];
 
   return (
-    <div className="flex flex-col gap-[100px]">
+    <div className="flex flex-col gap-[100px] pt-52">
       {/* Section 1 Content */}
       <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
         <div className="w-full sm:w-2/3">
@@ -135,8 +135,12 @@ function ReasonsContainer() {
                 className="absolute w-[90%] max-w-[450px] p-4 rounded-lg transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 z-10"
                 style={reason.style}
               >
-                <h3 className="text-2xl md:text-3xl lg:text-[36px] font-bold mb-2">{reason.title}</h3>
-                <p className="text-base md:text-lg lg:text-[20px]">{reason.description}</p>
+                <h3 className="text-2xl md:text-3xl lg:text-[36px] font-bold mb-2">
+                  {reason.title}
+                </h3>
+                <p className="text-base md:text-lg lg:text-[20px]">
+                  {reason.description}
+                </p>
               </div>
             ))}
           </div>
