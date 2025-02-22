@@ -9,7 +9,7 @@ function page() {
     <div>
       <Hero />
       <ReasonsContainer />
-      <Contact />
+    
     </div>
   );
 }

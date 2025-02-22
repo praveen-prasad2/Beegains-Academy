@@ -1,9 +1,38 @@
 import React from "react";
 import Link from "next/link";
 import { GoArrowRight } from "react-icons/go";
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 
 function ReasonsContainer() {
+  const pathRef = useRef<SVGPathElement | null>(null);
+
+  useEffect(() => {
+    if (!pathRef.current) return;
+
+    const path = pathRef.current as SVGPathElement; // Type assertion
+    const pathLength = path.getTotalLength(); // Now recognized
+
+    gsap.set(path, {
+      strokeDasharray: pathLength,
+      strokeDashoffset: pathLength,
+    });
+
+    gsap.to(path, {
+      strokeDashoffset: 0,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".line-container",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+      },
+    });
+  }, []);
   return (
     <>
       <div className="flex flex-col gap-[100px]">
@@ -50,6 +79,27 @@ function ReasonsContainer() {
             <span className="text-bee-orange font-[700]">Beegains Academy</span>
           </h1>
 
+          <div className="line-container">
+            <svg
+              width="1007"
+              height="1236"
+              viewBox="0 0 1007 1236"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="15.5" cy="15.5" r="15.5" fill="#0081FA" />
+              <circle cx="757.5" cy="388.5" r="15.5" fill="#0081FA" />
+              <circle cx="991.5" cy="630.5" r="15.5" fill="#0081FA" />
+              <circle cx="682.5" cy="882.5" r="15.5" fill="#0081FA" />
+              <circle cx="960.5" cy="1220.5" r="15.5" fill="#0081FA" />
+              <path
+                ref={pathRef}
+                d="M18.4991 24C-7.50037 110 203.1 287 507.5 289C888 291.5 765.5 505 596.5 524C427.5 543 -21.5 343 39.5 540.5C100.5 738 255.225 841.312 486 689C736 524 968 531 991.5 644C1015 757 512 811 736 1001C915.2 1153 956 1213.67 954 1225"
+                stroke="#0081FA"
+                stroke-width="10"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </>
