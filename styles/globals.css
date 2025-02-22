@@ -32,9 +32,9 @@ body {
   body {
     padding-right: 20px;
     padding-left: 20px;
-    background-image: url("/global-bg-mob.svg");
-    background-size: cover;
-    background-repeat: repeat;
+    background-image: url("/global-bg-mob.svg")!important;
+    background-size: cover!important;
+    background-repeat: repeat!important;
   }
 }
 
