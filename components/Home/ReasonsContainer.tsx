@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -88,39 +90,30 @@ function ReasonsContainer() {
       <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
         <div className="w-full sm:w-2/3">
           <h1 className="text-[28px] font-[700] uppercase leading-[1] sm:text-[58px]">
-            We provide Intensive
-            <br /> Digital marketing
+            Intensive
+            <br /> Digital
+            <br /> marketing
             <br /> program
           </h1>
-          <p className="text-[13px] font-[500] capitalize sm:text-[25px]">
-            03 months program with 00 live projects
-          </p>
         </div>
         <div className="w-full sm:w-1/3 flex flex-col">
-          <div className="flex flex-col justify-end gap-5 items-end text-justify">
-            <p className="font-[13px] capitalize sm:font-[20px]">
-              we offer a comprehensive Intensive Digital Marketing Program
-              designed to help businesses establish a strong online presence,
-              attract the right audience, and maximize conversions. Our program
-              is tailored for startups, small businesses, and enterprises
-              looking for data-driven strategies and cutting-edge marketing
-              techniques to scale their business effectively.
-            </p>
-            <a
-              href="#"
-              className="font-[13px] underline flex gap-2 text-center sm:font-[16px]"
-            >
-              <p className="flex items-center gap-2">
-                Learn more about this
-                <span className="inline-block transform translate-x-1">→</span>
-              </p>
-            </a>
+          {/* 3 Month class  */}
+
+          <div className="flex items-center">
+            {/* left bar */}
+            <div className="bg-bee-orange text-black font-medium px-4 py-2  w-[260px] h-[55px] flex items-center">
+              <span className="font-semibold">Mode:</span> Offline Classes
+            </div>
+            {/* circle */}
+            <div className="ml-[-23px]">
+              <img src="/half-circle.svg" alt="" />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Section 2 and Line Animation */}
-      <div>
+      <div className="">
         <h1 className="text-[20px] leading-[1] capitalize sm:text-[50px]">
           Here are a few reasons why you <br /> should choose{" "}
           <span className="text-[#FFA500] font-[700]">Beegains Academy</span>
