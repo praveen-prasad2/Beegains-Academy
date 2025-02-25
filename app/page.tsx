@@ -4,6 +4,7 @@ import Hero from "../components/Home/hero";
 import ReasonsContainer from "@/components/Home/ReasonsContainer";
 import TheVision from "@/components/Home/TheVision";
 import TheCourse from "@/components/Home/TheCourse";
+import Design from "@/components/Home/Design";
 
 function page() {
   return (
@@ -12,6 +13,7 @@ function page() {
       <ReasonsContainer />
       <TheVision />
       <TheCourse/>
+      <Design/>
     </div>
   );
 }

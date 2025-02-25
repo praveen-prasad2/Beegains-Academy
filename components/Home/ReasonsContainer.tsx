@@ -4,6 +4,7 @@ import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
+import Image from "next/image";
 
 // Register GSAP plugins
 if (typeof window !== "undefined") {
@@ -106,7 +107,7 @@ function ReasonsContainer() {
             </div>
             {/* circle */}
             <div className="ml-[-23px]">
-              <img src="/half-circle.svg" alt="" />
+              <img src="/half-circle.svg" alt=""  />
             </div>
           </div>
         </div>

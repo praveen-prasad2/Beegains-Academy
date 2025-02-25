@@ -13,6 +13,7 @@ export default {
       backgroundImage: {
         "custom-bg": "url('/global-bg.svg')",
         "thevision-bg":"url('/vision-bg.png')",
+        "design-bg":"url('/design-bg.png')",
       },
       fontFamily: {
         sans: ["Montserrat", "serif"],
