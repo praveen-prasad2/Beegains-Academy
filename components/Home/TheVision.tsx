@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function TheVision() {
   return (
@@ -32,7 +33,12 @@ function TheVision() {
           </h1>
         </div>
         <div className="flex items-end">
-          <img src="/vision-girl.png" alt="" className="w-[780px] h-[514px]" />
+          <Image
+            src={"/vision-girl.png"}
+            width={780}
+            height={514}
+            alt="the vision girl"
+          />
         </div>
       </div>
     </div>

@@ -1,5 +1,7 @@
 import { div } from "framer-motion/client";
 import React from "react";
+import Image from "next/image";
+import { Fullscreen } from "lucide-react";
 
 function TheCourse() {
   return (
@@ -20,7 +22,12 @@ function TheCourse() {
         </p>
       </div>
       <div>
-        <img src="/the-course.png" alt="" />
+        <Image
+          src={"/the-course.png"}
+          width={2000}
+          height={100}
+          alt="the course animated image"
+        />
       </div>
     </div>
   );

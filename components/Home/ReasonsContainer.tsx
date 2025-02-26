@@ -86,7 +86,7 @@ function ReasonsContainer() {
   ];
 
   return (
-    <div className="flex flex-col gap-[100px] pt-52">
+    <div className="flex flex-col gap-[100px] pt-52 pl-[110px] ">
       {/* Section 1 Content */}
       <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
         <div className="w-full sm:w-2/3">
@@ -106,8 +106,13 @@ function ReasonsContainer() {
               <span className="font-semibold">Mode:</span> Offline Classes
             </div>
             {/* circle */}
-            <div className="ml-[-23px]">
-              <img src="/half-circle.svg" alt=""  />
+            <div className="ml-[-25px]">
+              <Image
+                src={"/half-circle.svg"}
+                width={280}
+                height={280}
+                alt={"3month course image"}
+              />
             </div>
           </div>
         </div>
