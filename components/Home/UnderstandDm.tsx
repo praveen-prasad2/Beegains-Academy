@@ -37,7 +37,7 @@ function UnderstandDm() {
           </h1>
           <p className="text-[20px] text-bee-offwhite">
             Digital marketing demands a unique blend of creativity and
-            professionalism. It's about more than just flashy ads; it's about
+            professionalism. It&apos;s about more than just flashy ads; it&apos;s about
             crafting compelling narratives, developing innovative campaigns that
             resonate with target audiences, and delivering results-driven
             strategies. This balance of creativity and professionalism is
@@ -51,7 +51,7 @@ function UnderstandDm() {
           <p className="text-[20px] text-bee-offwhite">
             Studying with an industry leader in digital marketing provides
             invaluable insights and unparalleled expertise. These leaders
-            possess a deep understanding of the industry's best practices,
+            possess a deep understanding of the industry&apos;s best practices,
             emerging trends, and the challenges faced by real-world businesses.
             Our guidance goes beyond textbook knowledge, offering real-world
             experiences, valuable industry connections, and mentorship that can
