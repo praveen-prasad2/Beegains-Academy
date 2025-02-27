@@ -6,19 +6,19 @@
 
 body {
   font-family: "Montserrat", serif;
-  background-image: url("/global-bg.svg");
-  background-size: cover;
-  background-repeat: repeat;
-  width: 100%;
+  background-image: url("/global-bg.svg") !important;
+  background-size: contain !important;
+  background-repeat: repeat !important;
+  /* width: 100%; */
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   body {
     background-image: url("/global-bg-mob.svg") !important;
     background-size: cover !important;
     background-repeat: repeat !important;
   }
-}
+} */
 
 @layer base {
   :root {
