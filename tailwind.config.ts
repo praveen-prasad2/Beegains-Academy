@@ -12,10 +12,11 @@ export default {
     extend: {
       backgroundImage: {
         "custom-bg": "url('/global-bg.svg')",
-        "thevision-bg":"url('/vision-bg.png')",
-        "design-bg":"url('/design-bg.png')",
-        "understand-bg1":"url('/understanddm-image1.png')",
-        "understand-bg2":"url('/understanddm-image2.png')",
+        "thevision-bg": "url('/vision-bg.png')",
+        "design-bg": "url('/design-bg.png')",
+        "understand-bg1": "url('/understanddm-image1.png')",
+        "understand-bg2": "url('/understanddm-image2.png')",
+        "detailed-bg": "url('/detailed-bg.png')",
       },
       fontFamily: {
         sans: ["Montserrat", "serif"],
