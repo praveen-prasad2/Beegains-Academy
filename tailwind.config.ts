@@ -30,7 +30,7 @@ export default {
       },
       colors: {
         "bee-orange": "#F59120",
-        "bee-blue": "#0081FA",
+        "bee-blue": "#0241CC",
         "bee-black": "#000000",
         "bee-offwhite": "#F2F2F2",
         background: "hsl(var(--background))",

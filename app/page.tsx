@@ -7,6 +7,7 @@ import TheCourse from "@/components/Home/TheCourse";
 import Design from "@/components/Home/Design";
 import UnderstandDm from "@/components/Home/UnderstandDm";
 import InfoGraph from "@/components/Home/InfoGraph";
+import ProgramOverview from "@/components/Home/ProgramOverview";
 
 function page() {
   return (
@@ -18,6 +19,7 @@ function page() {
       <UnderstandDm />
       <InfoGraph/>
       <Design/>
+      <ProgramOverview/>
     </div>
   );
 }
