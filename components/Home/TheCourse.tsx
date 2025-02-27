@@ -4,8 +4,8 @@ import Image from "next/image";
 
 function TheCourse() {
   return (
-    <div className="w-screen h-[1200px] flex flex-col justify-end">
-      <div className="pl-[110px] pr-[110px]">
+    <div className="w-screen h-auto flex flex-col justify-end">
+      <div className="pl-[110px] pr-[110px] pt-[120px]">
         <h1 className="text-[100px] font-[800] text-bee-orange">The Course</h1>
         <p>
           This comprehensive digital marketing course aims to empower
