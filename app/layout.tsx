@@ -1,11 +1,10 @@
 "use client";
 
-import Header from "@/components/header";
-import { Montserrat } from 'next/font/google';
+import Header from "@/components/Global/header";
+import { Montserrat } from "next/font/google";
 
-import '../styles/globals.css';
-
-
+import "../styles/globals.css";
+import Footer from "@/components/Global/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -22,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        
-        <Header/>
-        
-        
-        {children}</body>
+        <Header />
+
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
