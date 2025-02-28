@@ -18,6 +18,7 @@ export default {
         "understand-bg2": "url('/understanddm-image2.png')",
         "detailed-bg": "url('/detailed-bg.png')",
         "footer-bg": "url('/footer-bg.png')",
+        "enrollment-bg": "url('/enrollment-bg.png')",
       },
       fontFamily: {
         sans: ["Montserrat", "serif"],

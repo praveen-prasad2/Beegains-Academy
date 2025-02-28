@@ -2,9 +2,10 @@
 
 import Header from "@/components/Global/header";
 import { Montserrat } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
 
 import "../styles/globals.css";
-import Footer from "@/components/Global/Footer";
+// import Footer from "@/components/Global/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -24,7 +25,8 @@ export default function RootLayout({
         <Header />
 
         {children}
-        <Footer />
+        <Toaster position="top-left"  />
+        {/* <Footer /> */}
       </body>
     </html>
   );
