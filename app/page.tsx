@@ -8,7 +8,6 @@ import Design from "@/components/Home/Design";
 import UnderstandDm from "@/components/Home/UnderstandDm";
 import InfoGraph from "@/components/Home/InfoGraph";
 import ProgramOverview from "@/components/Home/ProgramOverview";
-import DetailedOverview from "@/components/Home/DetailedOverview";
 import Certification from "@/components/Home/Certification";
 
 function page() {
@@ -22,7 +21,7 @@ function page() {
       <InfoGraph />
       <Design />
       <ProgramOverview />
-      <DetailedOverview />
+
       <Certification />
     </div>
   );

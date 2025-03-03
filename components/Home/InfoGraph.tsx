@@ -43,7 +43,7 @@ function InfoGraph() {
         </div>
       </div>
       {/* Part 2  */}
-      <div className="w-screen h-[728px] bg-[#fcf2e9] flex items-center justify-between pl-[110px] pr-[110px]">
+      <div className="w-full h-[728px] bg-[#fcf2e9] flex items-center justify-between pl-[110px] pr-[110px]">
         <h1 className="text-[100px] leading-[1] font-[800] text-[#0241cc]">
           THE <br />
           EXCITEMENT
@@ -51,7 +51,7 @@ function InfoGraph() {
         </h1>
         <Image
           src={"/steps.png"}
-          width={1098}
+          width={100}
           height={728}
           alt="the course animated image"
         />

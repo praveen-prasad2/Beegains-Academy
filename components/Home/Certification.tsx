@@ -147,7 +147,7 @@ function Certification() {
             </form>
           </div>
         </div>
-
+  
         {/* Imgae and content  */}
 
         <div className="w-[961px] h-[744px] bg-enrollment-bg bg-cover bg-no-repeat flex flex-col justify-end gap-[30px] pl-[50px] pb-[50px]">
