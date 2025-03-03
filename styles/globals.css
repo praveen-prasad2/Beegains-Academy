@@ -9,7 +9,9 @@ body {
   background-image: url("/global-bg.svg") !important;
   background-size: contain !important;
   background-repeat: repeat !important;
-  /* width: 100%; */
+  width: 100% !important;
+  /* overflow: hidden; */
+  
 }
 
 /* @media (max-width: 480px) {

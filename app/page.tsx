@@ -8,7 +8,6 @@ import Design from "@/components/Home/Design";
 import UnderstandDm from "@/components/Home/UnderstandDm";
 import InfoGraph from "@/components/Home/InfoGraph";
 import ProgramOverview from "@/components/Home/ProgramOverview";
-import Certification from "@/components/Home/Certification";
 
 function page() {
   return (
@@ -21,8 +20,6 @@ function page() {
       <InfoGraph />
       <Design />
       <ProgramOverview />
-
-      <Certification />
     </div>
   );
 }

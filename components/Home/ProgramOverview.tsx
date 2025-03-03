@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function ProgramOverview() {
   return (
-    <div>
+    <div className="w-screen">
       {/* Part 1 */}
-      <div className="flex gap-[100px] items-center pl-[110px] pr-[110px]">
+      <div className="flex gap-[100px] items-center pl-[110px] pr-[110px] w-screen">
         <h1 className="text-[100px] font-[800] text-bee-blue leading-[1]">
           PROGRAM <br />
           OVERVIEW

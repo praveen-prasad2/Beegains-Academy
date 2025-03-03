@@ -6,7 +6,7 @@ function InfoGraph() {
   return (
     <div>
       {/* Part 1  */}
-      <div className="flex flex-col justify-around h-screen">
+      <div className="flex flex-col justify-around h-screen w-screen">
         <div className="flex justify-center">
           <Image
             src={"/bee-academy-info.png"}

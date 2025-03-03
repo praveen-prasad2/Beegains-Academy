@@ -43,8 +43,8 @@ function ReasonsContainer() {
       description:
         "Exposure to a high energy environment full of working professionals showcasing their best work, day in day out for passionate tech professionals.",
       style: {
-        left: "20%",
-        top: "6%",
+        left: "19%",
+        top: "7%",
       },
     },
     {
@@ -52,8 +52,8 @@ function ReasonsContainer() {
       description:
         "Forge valuable connections with industry leaders, offering potential exposure and learning of unmatched quality.",
       style: {
-        left: "94%",
-        top: "35%",
+        left: "77%",
+        top: "36%",
       },
     },
     {
@@ -61,8 +61,8 @@ function ReasonsContainer() {
       description:
         "Deep hands-on experience with industry-standard tools and real-world projects.",
       style: {
-        left: "79%",
-        top: "55%",
+        left: "64%",
+        top: "56%",
       },
     },
     {
@@ -70,16 +70,16 @@ function ReasonsContainer() {
       description:
         "Stay ahead of the curve with a curriculum that emphasizes cutting-edge digital marketing trends and technologies.",
       style: {
-        left: "50%",
+        left: "40%",
         top: "76%",
       },
     },
     {
       title: "Expert Faculty:",
       description:
-        "Learn from experienced industry professionals who bring real-world expertise to the classroom.",
+        "Learn from experienced industry professionals who bring real-world expertise to the classrlineoom.",
       style: {
-        left: "88%",
+        left: "68%",
         top: "102%",
       },
     },
@@ -119,13 +119,13 @@ function ReasonsContainer() {
       </div>
 
       {/* Section 2 and Line Animation */}
-      <div className="">
+      <div className="w-screen">
         <h1 className="text-[20px] leading-[1] capitalize sm:text-[50px]">
           Here are a few reasons why you <br /> should choose{" "}
           <span className="text-[#FFA500] font-[700]">Beegains Academy</span>
         </h1>
 
-        <div className="line-container pt-10 sm:pt-10 relative">
+        <div className="line-container pt-10 sm:pt-10 relative w-screen">
           {/* Content boxes */}
           <div className="absolute inset-0 w-full h-full">
             {reasonsData.map((reason, index) => (
@@ -149,7 +149,7 @@ function ReasonsContainer() {
             viewBox="0 0 1007 1236"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-auto"
+            className="w-[80%] h-auto"
             preserveAspectRatio="xMidYMid meet"
           >
             <circle cx="15.5" cy="15.5" r="15.5" fill="#0081FA" />
