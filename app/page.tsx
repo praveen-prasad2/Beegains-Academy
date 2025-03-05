@@ -8,11 +8,13 @@ import Design from "@/components/Home/Design";
 import UnderstandDm from "@/components/Home/UnderstandDm";
 import InfoGraph from "@/components/Home/InfoGraph";
 import ProgramOverview from "@/components/Home/ProgramOverview";
+import IntensiveDm from "@/components/Home/IntensiveDm";
 
 function page() {
   return (
     <div>
       <Hero />
+      <IntensiveDm />
       <ReasonsContainer />
       <TheVision />
       <TheCourse />

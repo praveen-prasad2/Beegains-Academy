@@ -1,4 +1,3 @@
-import { url } from "node:inspector";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,9 +18,10 @@ export default {
         "detailed-bg": "url('/detailed-bg.png')",
         "footer-bg": "url('/footer-bg.png')",
         "enrollment-bg": "url('/enrollment-bg.png')",
+        "intensive-bg": "url('/intensive-bg.png')",
       },
       fontFamily: {
-        sans: ["Montserrat", "serif"],
+        k2d: ["K2D", "sans-serif"],
       },
       screens: {
         xs: "376px",

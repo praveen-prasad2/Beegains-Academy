@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&display=swap");
 
 body {
-  font-family: "Montserrat", serif;
+  font-family: "K2D", sans-serif;
   background-image: url("/global-bg.svg") !important;
   background-size: contain !important;
   background-repeat: repeat !important;
   width: 100% !important;
   /* overflow: hidden; */
-  
 }
 
 /* @media (max-width: 480px) {
@@ -87,8 +86,6 @@ body {
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -97,4 +94,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-

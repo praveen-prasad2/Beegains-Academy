@@ -87,37 +87,6 @@ function ReasonsContainer() {
 
   return (
     <div className="flex flex-col gap-[100px] pt-52 pl-[110px] ">
-      {/* Section 1 Content */}
-      <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
-        <div className="w-full sm:w-2/3">
-          <h1 className="text-[28px] font-[700] uppercase leading-[1] sm:text-[58px]">
-            Intensive
-            <br /> Digital
-            <br /> marketing
-            <br /> program
-          </h1>
-        </div>
-        <div className="w-full sm:w-1/3 flex flex-col">
-          {/* 3 Month class  */}
-
-          <div className="flex items-center">
-            {/* left bar */}
-            <div className="bg-bee-orange text-black font-medium px-4 py-2  w-[260px] h-[55px] flex items-center">
-              <span className="font-semibold">Mode:</span> Offline Classes
-            </div>
-            {/* circle */}
-            <div className="ml-[-25px]">
-              <Image
-                src={"/half-circle.svg"}
-                width={280}
-                height={280}
-                alt={"3month course image"}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Section 2 and Line Animation */}
       <div className="w-screen">
         <h1 className="text-[20px] leading-[1] capitalize sm:text-[50px]">
