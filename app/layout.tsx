@@ -1,18 +1,11 @@
 "use client";
 
 import Header from "@/components/Global/header";
-import { Montserrat } from "next/font/google";
+
 import { Toaster } from "@/components/ui/sonner";
 
 import "../styles/globals.css";
-// import Footer from "@/components/Global/Footer";
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-montserrat",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import Footer from "@/components/Global/Footer";
 
 export default function RootLayout({
   children,
@@ -21,12 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>
+      <body>
         <Header />
 
         {children}
-        <Toaster position="top-left"  />
-        {/* <Footer /> */}
+        <Toaster position="top-left" />
+        <Footer />
       </body>
     </html>
   );
