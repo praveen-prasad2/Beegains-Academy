@@ -7,7 +7,7 @@ function IntensiveDm() {
       {" "}
       <div className="flex flex-col gap-8 sm:flex-row sm:gap-0">
         <div className="w-full sm:w-2/3">
-          <h1 className="  text-8xl font-[700]  uppercase leading-[1] sm:text-[58px] text-white">
+          <h1 className=" text-[33px]  font-k2d font-bold  uppercase leading-[1] sm:text-[100px] text-white">
             Intensive
             <br /> Digital
             <br /> marketing

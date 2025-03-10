@@ -86,9 +86,9 @@ function ReasonsContainer() {
   ];
 
   return (
-    <div className="flex flex-col gap-[100px] pt-52 pl-[110px] ">
+    <div className="flex flex-col gap-[100px] pt-52 pl-[110px] bg-bee-orange">
       {/* Section 2 and Line Animation */}
-      <div className="w-screen">
+      <div className="w-screen ">
         <h1 className="text-[20px] leading-[1] capitalize sm:text-[50px]">
           Here are a few reasons why you <br /> should choose{" "}
           <span className="text-[#FFA500] font-[700]">Beegains Academy</span>
