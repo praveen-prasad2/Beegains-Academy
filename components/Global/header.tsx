@@ -30,7 +30,7 @@ function Header() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex bg-[#D9D9D9] text-[15px] font-[400] w-[365px] h-[52px] rounded-[50px] justify-around items-center px-1">
+      <div className="hidden font-k2d md:flex bg-[#D9D9D9] text-[15px] font-[400] w-[365px] h-[52px] rounded-[50px] justify-around items-center px-1">
         {menuItems.map((item) => (
           <Link
             key={item.name}
@@ -55,10 +55,7 @@ function Header() {
       </div>
 
       {/* Mobile Menu Button with Image */}
-      <button
-        className="md:hidden p-2"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
+      <button className="md:hidden p-2" onClick={() => setMenuOpen(!menuOpen)}>
         <Image
           src={menuOpen ? "/close-icon.svg" : "/menu-icon.svg"}
           alt="Menu Icon"
@@ -89,7 +86,7 @@ function Header() {
 
       {/* Talk Button */}
       <div className="hidden md:flex">
-        <button className="bg-bee-black w-[151px] h-[52px] text-white flex rounded-[50px] justify-center items-center gap-2">
+        <button className="bg-bee-black font-k2d w-[151px] h-[52px] text-white flex rounded-[50px] justify-center items-center gap-2">
           Lets Talk <Image src="/letstalk.svg" width={16} height={16} alt="" />
         </button>
       </div>

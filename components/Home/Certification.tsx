@@ -38,7 +38,7 @@ function Certification() {
   };
 
   return (
-    <div className="w-full h-screen  pt-[80px]">
+    <div className="w-full h-screen font-k2d  pt-[80px]">
       {/* Part 1 */}
       <div className="pl-[110px] pr-[110px]">
         <div className="flex flex-row gap-[10px] ">

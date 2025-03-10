@@ -44,7 +44,7 @@ function InfoGraph() {
       </div>
       {/* Part 2  */}
       <div className="w-full h-[728px] bg-[#fcf2e9] flex items-center justify-between pl-[110px] pr-[110px]">
-        <h1 className="text-[100px] leading-[1] font-[800] text-[#0241cc]">
+        <h1 className="text-[100px] font-k2d leading-[1] font-[800] text-[#0241cc]">
           THE <br />
           EXCITEMENT
           <br /> BEGINS

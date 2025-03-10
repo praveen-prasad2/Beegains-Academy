@@ -6,8 +6,8 @@ function TheCourse() {
   return (
     <div className="w-screen h-auto flex flex-col justify-end">
       <div className="pl-[110px] pr-[110px] pt-[120px]">
-        <h1 className="text-[100px] font-[800] text-bee-orange">The Course</h1>
-        <p>
+        <h1 className="text-[100px] font-k2d font-[800] text-bee-orange">The Course</h1>
+        <p className="font-k2d font-normal text-[17px]">
           This comprehensive digital marketing course aims to empower
           individuals with the knowledge and skills necessary to thrive in the
           dynamic digital landscape. By providing a learning experience that
