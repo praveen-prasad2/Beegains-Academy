@@ -19,6 +19,7 @@ export default {
         "footer-bg": "url('/footer-bg.png')",
         "enrollment-bg": "url('/enrollment-bg.png')",
         "intensive-bg": "url('/intensive-bg.png')",
+        "line-container-bg": "url('/line-container-bg.png')",
       },
       fontFamily: {
         k2d: ["K2D", "sans-serif"],

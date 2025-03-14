@@ -31,7 +31,7 @@ function Header() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden font-k2d md:flex bg-white bg-opacity-60 backdrop:blur- text-[15px] font-[400] w-[490px] h-[57px] border border-[#CBCBCB] rounded-[10px] justify-around items-center px-1">
+      <div className="hidden sticky top-0 font-k2d md:flex bg-white bg-opacity-60 backdrop:blur- text-[15px] font-[400] w-[490px] h-[57px] border border-[#CBCBCB] rounded-[10px] justify-around items-center px-1">
         {menuItems.map((item) => (
           <Link
             key={item.name}

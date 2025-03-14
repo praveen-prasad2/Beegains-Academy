@@ -22,9 +22,9 @@ function TheCourse() {
       </div>
       <div>
         <Image
-          src={"/the-course.png"}
+          src={"/the-course-animated.gif"}
           width={2000}
-          height={100}
+          height={446}
           alt="the course animated image"
         />
       </div>
