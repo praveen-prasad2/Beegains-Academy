@@ -15,12 +15,12 @@ function page() {
   return (
     <div>
       <Hero />
-      <IntensiveDm />
       <ReasonsContainer />
       <TheVision />
       <TheCourse />
       <UnderstandDm />
       <InfoGraph />
+      <IntensiveDm />
       <Design />
       <ProgramOverview />
       <BonusSessions />
