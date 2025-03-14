@@ -12,6 +12,7 @@ function Header() {
     { name: "Home", href: "#", icon: "/home.svg" },
     { name: "About", href: "#", icon: "/about.svg" },
     { name: "Course", href: "#", icon: "/course.svg" },
+    { name: "Contact", href: "#", icon: "/course.svg" },
   ];
 
   return (
@@ -30,13 +31,13 @@ function Header() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden font-k2d md:flex bg-[#D9D9D9] text-[15px] font-[400] w-[365px] h-[52px] rounded-[50px] justify-around items-center px-1">
+      <div className="hidden font-k2d md:flex bg-white bg-opacity-60 backdrop:blur- text-[15px] font-[400] w-[490px] h-[57px] border border-[#CBCBCB] rounded-[10px] justify-around items-center px-1">
         {menuItems.map((item) => (
           <Link
             key={item.name}
             href={item.href}
-            className={`w-[121px] h-[45px] rounded-[50px] transition-all flex justify-center items-center gap-2 ${
-              active === item.name ? "bg-black text-white" : ""
+            className={`w-[120px] h-[43px] rounded-[10px] transition-all flex justify-center items-center gap-2 ${
+              active === item.name ? "bg-bee-orange text-white" : ""
             }`}
             onClick={() => setActive(item.name)}
           >

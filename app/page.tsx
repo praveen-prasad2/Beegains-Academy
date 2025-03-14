@@ -9,6 +9,7 @@ import UnderstandDm from "@/components/Home/UnderstandDm";
 import InfoGraph from "@/components/Home/InfoGraph";
 import ProgramOverview from "@/components/Home/ProgramOverview";
 import IntensiveDm from "@/components/Home/IntensiveDm";
+import BonusSessions from "@/components/Home/BonusSessions";
 
 function page() {
   return (
@@ -22,6 +23,7 @@ function page() {
       <InfoGraph />
       <Design />
       <ProgramOverview />
+      <BonusSessions />
     </div>
   );
 }
