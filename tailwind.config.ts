@@ -33,7 +33,7 @@ export default {
         "2xl": "1536px",
       },
       colors: {
-        "bee-orange": "#FF7700",
+        "bee-orange": "#F59120",
         "bee-blue": "#0241CC",
         "bee-black": "#000000",
         "bee-offwhite": "#F2F2F2",

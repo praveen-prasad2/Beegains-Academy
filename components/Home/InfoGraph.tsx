@@ -22,24 +22,27 @@ function InfoGraph() {
             height={536}
             alt="the course animated image"
           />
-          <Image
-            src={"/infograph2.png"}
-            width={345}
-            height={536}
-            alt="the course animated image"
-          />
-          <Image
-            src={"/infograph3.png"}
-            width={345}
-            height={536}
-            alt="the course animated image"
-          />
-          <Image
-            src={"/infograph4.png"}
-            width={345}
-            height={536}
-            alt="the course animated image"
-          />
+
+          <div className="flex flex-col  items-center">
+            <div className="w-[100px] h-[50px] bg-bee-orange rounded-t-full flex justify-center items-center">
+              <h1 className="text-[20px] font-k2d font-semibold text-white">
+                01
+              </h1>
+            </div>
+            <div className="w-[363px] h-[91px] bg-white shadow-2xl z-10"></div>
+            <div className="w-[288px] h-[349px] bg-white rounded-b-[50px] shadow-2xl">
+              <Image
+                src={"/infograph1.svg"}
+                width={150}
+                height={150}
+                alt="the course animated image"
+              />
+
+              <p className="text-[20px] font-k2d">
+                Know The Secrets Of Industry Leading Digital Marketers.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       {/* Part 2  */}
