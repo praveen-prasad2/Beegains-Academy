@@ -5,7 +5,7 @@ function UnderstandDm() {
   return (
     <div>
       {/* Part 1  */}
-      <div className="bg-understand-bg1 w-screen h-screen bg-cover bg bg-no-repeat pl-[110px] pr-[110px] flex flex-col justify-around">
+      <div className="bg-understand-bg1 w-screen h-[1069px] bg-cover bg bg-no-repeat pl-[110px] pr-[110px]  flex flex-col justify-center gap-[80px]">
         <div>
           <h1 className="text-[100px] text-bee-offwhite font-k2d font-[800] leading-[1.1]">
             Understanding
@@ -14,7 +14,7 @@ function UnderstandDm() {
           </h1>
         </div>
         <div>
-          <h1 className="text-[32px] font-k2d font-[600] text-bee-orange">
+          <h1 className="text-[32px] font-k2d font-[600] text-white">
             The Importance of Digital Strategy & Building a Career:{" "}
           </h1>
           <p className="text-[20px] font-k2d text-bee-offwhite">
@@ -31,9 +31,9 @@ function UnderstandDm() {
         </div>
       </div>
       {/* Part 2  */}
-      <div className="bg-understand-bg2 bg-black/100 w-screen h-screen bg-cover bg bg-no-repeat pl-[110px] pr-[110px] flex flex-col justify-around">
+      <div className="bg-understand-bg2 bg-black/100 w-screen h-[958px] bg-cover bg bg-no-repeat pl-[110px] pr-[110px] flex flex-col justify-center gap-[80px]">
         <div>
-          <h1 className="text-[32px]  font-k2d font-[600] text-bee-orange">
+          <h1 className="text-[32px]  font-k2d font-[600] text-white">
             Creativity & Professionalism in Digital Marketing:
           </h1>
           <p className="text-[20px] font-k2d text-bee-offwhite">
@@ -46,7 +46,7 @@ function UnderstandDm() {
           </p>
         </div>
         <div>
-          <h1 className="text-[32px] font-k2d font-[600] text-bee-orange">
+          <h1 className="text-[32px] font-k2d font-[600]  text-white">
             The Value of Learning from an Industry Leader:
           </h1>
           <p className="text-[20px] font-k2d text-bee-offwhite">
@@ -60,9 +60,6 @@ function UnderstandDm() {
           </p>
         </div>
       </div>
-
-      {/* Orange Bar bg  */}
-      <div className="bg-bee-orange w-screen h-[135px]"></div>
     </div>
   );
 }
