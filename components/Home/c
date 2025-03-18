@@ -1,0 +1,41 @@
+<style>
+    .read-more-content {
+        display: none;
+    }
+    .read-more-btn, .close-btn {
+        color: blue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+</style>
+<script>
+    function toggleReadMore() {
+        var content = document.getElementById("read-more-content");
+        var btn = document.getElementById("read-more-btn");
+        var closeBtn = document.getElementById("close-btn");
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "inline";
+            btn.style.display = "none";
+            closeBtn.style.display = "inline";
+        }
+    }
+    function closeReadMore() {
+        var content = document.getElementById("read-more-content");
+        var btn = document.getElementById("read-more-btn");
+        var closeBtn = document.getElementById("close-btn");
+        content.style.display = "none";
+        btn.style.display = "inline";
+        closeBtn.style.display = "none";
+    }
+</script>
+</head>
+<body>
+<p>Enter the internet and you are greeted by a hyper-competitive digital landscape. Here, simply 'being present' on social media isn't nearly enough. You need strategic, data-driven campaigns for your brand’s real-time growth. That's where we come in. We started off as a digital agency and today, we are a full-service agency that helps brands propel growth. As one of the leading social media agencies in Kerala, backed by the robust Fourite Group, we are not just content creators – we design engagement. 
+<span id="read-more-content" class="read-more-content"><br><br>We start by conducting strategic social media audits to discover new possibilities, this is then followed by crafting tailor-made, visually stunning content that aligns fully with your brand ethos and designed for maximum popularity. We then deploy ad targeting to reach and expand your customer base, employ influencers to build credibility, and deliver comprehensive performance analytics with insights into your ROI.
+
+
+    <br><br> Beyond our specialized social media expertise, Beegains offers a full-suite of digital marketing services, including SEO, PPC, web development, and branding, ensuring a holistic approach to your online growth. We’ve collaborated with businesses in India, the UAE, Canada, and beyond. Connect with Beegains today for a free consultation and discover how we can help you achieve your targets. 
+<span id="close-btn" class="close-btn" onclick="closeReadMore()" style="display:none;"> Close</span></span>
+<span id="read-more-btn" class="read-more-btn" onclick="toggleReadMore()"> Read More</span>
+</p>
+</body>

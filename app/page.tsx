@@ -10,6 +10,7 @@ import InfoGraph from "@/components/Home/InfoGraph";
 import ProgramOverview from "@/components/Home/ProgramOverview";
 import IntensiveDm from "@/components/Home/IntensiveDm";
 import BonusSessions from "@/components/Home/BonusSessions";
+import DmProgramOverview from "@/components/Home/DmProgramOverview";
 
 function page() {
   return (
@@ -17,10 +18,11 @@ function page() {
       <Hero />
       <ReasonsContainer />
       <TheVision />
-      <TheCourse />
-      <UnderstandDm />
       <InfoGraph />
       <IntensiveDm />
+      <TheCourse />
+      <UnderstandDm />
+      <DmProgramOverview />
       <Design />
       <ProgramOverview />
       <BonusSessions />

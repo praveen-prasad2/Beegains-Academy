@@ -11,7 +11,7 @@ function InfoGraph() {
           <Image
             src={"/bee-academy-info.png"}
             width={484}
-            height={258}  
+            height={258}
             alt="the course animated image"
           />
         </div>
@@ -19,12 +19,12 @@ function InfoGraph() {
           {[
             {
               id: "01",
-              image: "/infograph1.svg",
+              image: "/Lamp.gif",
               text: "Know The Secrets Of Industry Leading Digital Marketers.",
             },
             {
               id: "02",
-              image: "/infograph2.svg",
+              image: "/Search.gif",
               text: "Take The Data Driven Path.",
             },
             {
