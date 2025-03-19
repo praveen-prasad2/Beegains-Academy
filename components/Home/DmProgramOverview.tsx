@@ -18,11 +18,17 @@ function DmProgramOverview() {
           </div>
         </div>
         {/* Section 2 */}
-        <div className="w-32 h-32 rounded-full border-t-[8px] border-r-[4px] border-b-[2px] border-l-[6px] border-blue-500"></div>
         <div></div>
-        <div></div> 
-      </div>
 
+        {/* Section 3 */}
+
+        <div className="pl">
+          <h1 className="text-[80px] font-k2d text-bee-blue font-[700] leading-[.9]">
+            WHY SHOULD <br /> STUDENTS <br /> JOIN?
+          </h1>
+        </div>
+        <div></div>
+      </div>
 
       {/* Part 2 */}
       <div></div>

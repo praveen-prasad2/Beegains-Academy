@@ -12,11 +12,11 @@ function ProgramOverview() {
           OVERVIEW
         </h1>
         <Image
-          src={"/pentool.svg"}
+          src={"/Pentool.gif"}
           width={574}
           height={502}
           alt="pentool"
-          className="mt-[-140px]"
+          className="mt-[-230px]"
         />
       </div>
       {/* Part 2 */}

@@ -29,12 +29,12 @@ function InfoGraph() {
             },
             {
               id: "03",
-              image: "/infograph3.svg",
+              image: "/perfomance.gif",
               text: "Creativity distinguishes you from your competition.",
             },
             {
               id: "04",
-              image: "/infograph4.svg",
+              image: "/Graph.gif",
               text: "Real-time learning from the industry.",
             },
           ].map((info) => (

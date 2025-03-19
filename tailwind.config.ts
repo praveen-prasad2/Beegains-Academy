@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
+        "hero-bg":"url('/hero-bg.png')",
         "custom-bg": "url('/global-bg.svg')",
         "thevision-bg": "url('/vision-bg.png')",
         "design-bg": "url('/design-bg.png')",
