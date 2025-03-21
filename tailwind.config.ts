@@ -39,9 +39,21 @@ export default {
           "0%, 100%": { transform: "translateX(0)" },
           "50%": { transform: "translateX(5px)" }, // Slight move
         },
+        hoverEffect: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(-6px)" },
+        },
+        stampEffect: {
+          "0%": { transform: "scale(1) rotate(0deg)" },
+          "30%": { transform: "scale(1.2) rotate(-10deg)" },
+          "60%": { transform: "scale(0.9) rotate(5deg)" },
+          "100%": { transform: "scale(1) rotate(0deg)" },
+        },
       },
       animation: {
         slightMove: "moveSlightly 1s ease-in-out infinite",
+        hoverEffect: "hoverEffect 1s ease-in-out infinite", // Hover animation
+        stamp: "stampEffect 0.3s ease-in-out",
       },
       colors: {
         "bee-orange": "#F59120",
