@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-bg":"url('/hero-bg.png')",
+        "hero-bg": "url('/hero-bg.png')",
         "custom-bg": "url('/global-bg.svg')",
         "thevision-bg": "url('/vision-bg.png')",
         "design-bg": "url('/design-bg.png')",
@@ -21,6 +21,7 @@ export default {
         "enrollment-bg": "url('/enrollment-bg.png')",
         "intensive-bg": "url('/intensive-bg.png')",
         "line-container-bg": "url('/line-container-bg.png')",
+        "theresult-bg": "url('/theresult-bg.webp')",
       },
       fontFamily: {
         k2d: ["K2D", "sans-serif"],
@@ -32,6 +33,15 @@ export default {
         lg: "1024px",
         xl: "1280px",
         "2xl": "1536px",
+      },
+      keyframes: {
+        moveSlightly: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(5px)" }, // Slight move
+        },
+      },
+      animation: {
+        slightMove: "moveSlightly 1s ease-in-out infinite",
       },
       colors: {
         "bee-orange": "#F59120",

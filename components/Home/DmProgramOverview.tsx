@@ -104,7 +104,44 @@ function DmProgramOverview() {
         </div>
       </div>
       {/* Part 3 */}
-      <div></div>
+      <div className="w-full h-[960px] bg-theresult-bg ">
+        <div className="flex flex-col items-center ">
+          <h1 className="text-[100px] font-[700] font-k2d text-white">
+            The Result
+          </h1>
+          <div className="flex flex-col gap-5">
+            {/* Result 1  */}
+            <div className="flex items-center gap-10">
+              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
+              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
+                Industry-ready certification in Digital Marketing and content
+                strategy
+              </p>
+            </div>
+            {/* Result 2  */}
+            <div className="flex items-center gap-10">
+              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
+              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
+                Real-world project experience
+              </p>
+            </div>
+            {/* Result 3  */}
+            <div className="flex items-center gap-10">
+              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
+              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
+                Access to tools and templates for your portfolio
+              </p>
+            </div>
+            {/* Result 4  */}
+            <div className="flex items-center gap-10">
+              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
+              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
+                Placement assistance
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
