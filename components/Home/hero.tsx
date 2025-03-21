@@ -15,7 +15,7 @@ function hero() {
           height: "600px",
           paddingTop: "50px",
         }}
-        src="https://heyzine.com/flip-book/a700e1ed16.html"
+        src="https://heyzine.com/flip-book/a700e1ed16.html?hide=audio"
       ></iframe>
     </div>
   );

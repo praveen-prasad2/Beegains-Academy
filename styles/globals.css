@@ -68,6 +68,12 @@ body {
   /* overflow: hidden; */
 }
 
+/* Flipbook Styles */
+
+#pnlControls {
+  display:none !important;
+}
+
 /* @media (max-width: 480px) {
   body {
     background-image: url("/global-bg-mob.svg") !important;
