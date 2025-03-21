@@ -56,9 +56,11 @@ function ProgramOverview() {
         </div>
       </div>
       {/* Part 4 */}
-      <div className="pl-[110px] pr-[110px]">
+      <div className="pl-[110px] pr-[110px] flex justify-between  ">
         <div className="pt-[80px]">
-          <h1 className="text-[32px] font-k2d font-[800] text-bee-blue">Out Come:</h1>
+          <h1 className="text-[32px] font-k2d font-[800] text-bee-blue">
+            Out Come:
+          </h1>
           <p className="text-[20px]  font-k2d capitalize">
             Build a professional portfolio, understand core design principles,
             and gain hands-on <br />
@@ -66,15 +68,6 @@ function ProgramOverview() {
           </p>
         </div>
         <div className="flex justify-center pt-[80px]">
-          <div className="w-[473px] h-[323px] bg-bee-blue flex  justify-center items-center text-right">
-            <h1 className="text-[32px] font-k2d font-[800] text-bee-offwhite">
-              Course Fee: <br />
-              <span className="text-[45px] font-k2d font-[600] text-bee-offwhite">
-                ₹ 40,000
-              </span>{" "}
-              <br />+ tax
-            </h1>
-          </div>
           <div className="w-[473px] h-[323px] bg-[#27AAE0] flex justify-center items-center text-right">
             <h1 className="text-[32px] font-k2d font-[800] text-bee-offwhite">
               Placement <br />
@@ -84,24 +77,14 @@ function ProgramOverview() {
               </span>{" "}
             </h1>
             <Image
-              src={"/smiley.svg"}
-              width={80}
-              height={80}
+              src={"/smiley.png"}
+              width={120}
+              height={120}
               alt="Smiley"
               className="mt-[200px]"
             />
           </div>
         </div>
-      </div>
-      {/* Part 5 */}
-      <div>
-        <Image
-          src={"/group-of-people.png"}
-          width={1296}
-          height={865}
-          alt="Smiley"
-          className="mt-[200px]"
-        />
       </div>
     </div>
   );
