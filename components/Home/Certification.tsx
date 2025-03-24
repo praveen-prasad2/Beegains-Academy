@@ -1,48 +1,13 @@
 "use client";
-import { toast } from "sonner";
-import { FaCheckCircle } from "react-icons/fa";
 
-import React, { useState } from "react";
-import Image from "next/image";
+import React from "react";
 
 function Certification() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    contact: "",
-    place: "",
-    course: "",
-    classType: "Online",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    toast("Thank you! We'll respond shortly.", {
-      icon: <FaCheckCircle size={20} className="text-bee-orange" />,
-      style: {
-        background: "#fff", // Orange
-        color: "#000",
-        fontWeight: "bold",
-      },
-    });
-  };
-
   return (
     <div className="w-full h-screen font-k2d  pt-[80px]">
       {/* Part 1 */}
       <div className="flex flex-row justify-between  bg-[#fff] pl-[110px]">
         {/* Enrollment Form */}
-        
 
         {/* Imgae and content  */}
 

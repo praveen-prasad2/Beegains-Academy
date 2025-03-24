@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Certification from "@/components/Home/Certification";
+
 import { toast } from "sonner";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -108,10 +108,7 @@ function page() {
                 <option value="" disabled className="text-gray-400">
                   Course
                 </option>
-                <option
-                  value="digital-marketing"
-                  className="cursor-pointer"
-                >
+                <option value="digital-marketing" className="cursor-pointer">
                   Digital Marketing
                 </option>
                 <option value="chatgpt">ChatGPT</option>
