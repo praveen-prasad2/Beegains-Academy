@@ -9,10 +9,10 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: "Home", href: "#", icon: "/home.svg" },
+    { name: "Home", href: "/", icon: "/home.svg" },
     { name: "About", href: "#", icon: "/about.svg" },
     { name: "Course", href: "#", icon: "/course.svg" },
-    { name: "Contact", href: "#", icon: "/course.svg" },
+    { name: "Contact", href: "/contact", icon: "/course.svg" },
   ];
 
   return (
