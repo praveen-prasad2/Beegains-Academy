@@ -7,8 +7,8 @@ import { FaCheckCircle } from "react-icons/fa";
 
 import React, { useState } from "react";
 
-function page() {
-  const [FormData, setFormData] = useState({
+function Page() {
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
     contact: "",
@@ -23,12 +23,12 @@ function page() {
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
     >
   ) => {
-    setFormData({ ...FormData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", FormData);
+    console.log("Form Data Submitted:", formData);
     toast("Thank you! We'll respond shortly.", {
       icon: <FaCheckCircle size={20} className="text-bee-orange" />,
       style: {
@@ -64,7 +64,7 @@ function page() {
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                value={FormData.name}
+                value={formData.name}
                 onChange={handleChange}
                 className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
                 required
@@ -74,7 +74,7 @@ function page() {
                 type="email"
                 name="email"
                 placeholder="Email ID"
-                value={FormData.email}
+                value={formData.email}
                 onChange={handleChange}
                 className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
                 required
@@ -83,7 +83,7 @@ function page() {
                 type="tel"
                 name="contact"
                 placeholder="Contact Number"
-                value={FormData.contact}
+                value={formData.contact}
                 onChange={handleChange}
                 className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
                 required
@@ -92,7 +92,7 @@ function page() {
                 type="text"
                 name="place"
                 placeholder="Your Place"
-                value={FormData.place}
+                value={formData.place}
                 onChange={handleChange}
                 className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
                 required
@@ -101,7 +101,7 @@ function page() {
 
               <select
                 name="course"
-                value={FormData.course}
+                value={formData.course}
                 onChange={handleChange}
                 className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
               >
@@ -117,7 +117,7 @@ function page() {
 
               <select
                 name="classType"
-                value={FormData.classType || ""}
+                value={formData.classType || ""}
                 onChange={handleChange}
                 className="w-[360px] h-[46px] p-2 border-2 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
               >
@@ -131,7 +131,7 @@ function page() {
             <textarea
               name="message"
               placeholder="Message"
-              value={FormData.message}
+              value={formData.message}
               onChange={handleChange}
               className="w-[747px] h-[100px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
               rows={4}
@@ -166,4 +166,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
