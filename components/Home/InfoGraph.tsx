@@ -6,7 +6,7 @@ function InfoGraph() {
   return (
     <div>
       {/* Part 1  */}
-      <div className="flex flex-col justify-around h-[1200px] w-screen">
+      <div className="flex flex-col  h-screen w-screen">
         <div className="flex justify-center">
           <Image
             src={"/bee-academy-info.png"}
@@ -15,7 +15,7 @@ function InfoGraph() {
             alt="the course animated image"
           />
         </div>
-        <div className="flex gap-2 justify-center">
+        <div className="flex gap-10 justify-center pt-[80px] pb-[80px]">
           {[
             {
               id: "01",
@@ -39,13 +39,16 @@ function InfoGraph() {
             },
           ].map((info) => (
             <div key={info.id} className="flex flex-col items-center group">
-              <div className="w-[100px] h-[50px] bg-bee-orange rounded-t-full flex justify-center items-center">
-                <h1 className="text-[20px] font-k2d font-semibold text-white">
-                  {info.id}
-                </h1>
+              <div className="   relative">
+                <div className="absolute right-[90px] top-[1px] z-[99]">
+                  <h1 className="text-[20px] font-k2d font-semibold w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center text-bee-orange">
+                    {info.id}
+                  </h1>
+                </div>
               </div>
-              <div className="w-[363px] h-[91px] bg-white shadow-2xl z-10"></div>
-              <div className="w-[288px] h-[349px] bg-white rounded-b-[50px] shadow-2xl flex flex-col justify-around items-center p-2 text-center transition-transform transform group-hover:scale-105 duration-300">
+              {/* <div className="w-[363px] h-[91px] bg-gray-300   shadow-lg z-10"></div> */}
+
+              <div className="w-[250px] h-[349px] bg-bee-orange rounded-[50px] shadow-2xl flex flex-col justify-around items-center p-2 text-center transition-transform transform group-hover:scale-105 duration-300">
                 <Image
                   src={info.image}
                   width={150}
@@ -59,7 +62,7 @@ function InfoGraph() {
         </div>
       </div>
       {/* Part 2  */}
-      <div className="w-full h-[728px] bg-[#fcf2e9] flex items-center justify-between pl-[110px] pr-[110px]">
+      <div className="w-full h-[728px] bg-[#fcf2e9] flex items-center justify-between pl-[110px] pr-[110px] pt-[50px]">
         <h1 className="text-[100px] font-k2d leading-[1] font-[800] text-[#0241cc]">
           THE <br />
           EXCITEMENT
