@@ -71,7 +71,7 @@ body {
 /* Flipbook Styles */
 
 #pnlControls {
-  display:none !important;
+  display: none !important;
 }
 
 /* @media (max-width: 480px) {

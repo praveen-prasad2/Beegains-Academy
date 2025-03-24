@@ -48,7 +48,7 @@ function Footer() {
           <FaFacebookF size={23} />
         </Link>
       </div>
-      <div className="flex flex-col pt-[50px] justify-center gap-[50px] justify-between sm:flex-row ">
+      <div className="flex flex-col pt-[50px]  gap-[50px] justify-between sm:flex-row ">
         <div className="font-k2d text-[18px] flex gap-[20px]">
           <Link href={"#"}>Home</Link>
           <Link href={"#"}>About Us</Link>

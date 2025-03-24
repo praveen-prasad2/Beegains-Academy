@@ -13,7 +13,7 @@ if (typeof window !== "undefined") {
 
 function ReasonsContainer() {
   return (
-    <div className="flex flex-col gap-[100px] pl-[110px] h-auto bg-line-container-bg bg-cover bg-repeat">
+    <div className="flex flex-col h-[2120px] gap-[100px] pl-[110px] bg-line-container-bg bg-cover bg-repeat">
       {/* Section 2 and Line Animation */}
       <div className="w-screen ">
         <Image

@@ -1,73 +1,172 @@
 "use client";
 
-import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+import Image from "next/image";
+import Certification from "@/components/Home/Certification";
+import { toast } from "sonner";
+import { FaCheckCircle } from "react-icons/fa";
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+import React, { useState } from "react";
 
-function Page() {
-  const pathRef = useRef<SVGPathElement | null>(null);
+function page() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    contact: "",
+    place: "",
+    course: "",
+    classType: "",
+    message: "",
+  });
 
-  useEffect(() => {
-    if (!pathRef.current) return;
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-    const path = pathRef.current as SVGPathElement; // Type assertion
-    const pathLength = path.getTotalLength(); // Now recognized
-
-    gsap.set(path, {
-      strokeDasharray: pathLength,
-      strokeDashoffset: pathLength,
-    });
-
-    gsap.to(path, {
-      strokeDashoffset: 0,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".line-container",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form Data Submitted:", formData);
+    toast("Thank you! We'll respond shortly.", {
+      icon: <FaCheckCircle size={20} className="text-bee-orange" />,
+      style: {
+        background: "#fff", // Orange
+        color: "#000",
+        fontWeight: "bold",
       },
     });
-  }, []);
-
+  };
   return (
-    <>
-      <div className="flex flex-row ">
-        <div className="flex w-[20%]"></div>
+    <div className="w-full h-auto flex  pt-[110px] pl-[110px] pr-[110px]">
+      <div className="w-2/3">
+        <h1 className="text-[70px] font-k2d font-[800] leading-[.8]">
+          Enroll Your <br />
+          Courses Today –<br />{" "}
+          <span className="text-[30px]  font-[600}">
+            Take the Next Step in Your Career!
+          </span>{" "}
+        </h1>
+        <br />
+        <p className="font-k2d text-[20px]">
+          Register Now for Flexible Learning – Online & offline class are
+          Available. <br /> Unlock new skills and boost your career with our
+          expert-led courses.
+        </p>
 
-        <div className="line-container flex w-[60%] justify-start items-start">
-          <svg
-            width="1692"
-            height="3411"
-            viewBox="0 0 1692 3411"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              ref={pathRef}
-              d="M64.1056 19C31.9443 81.6006 257.192 258.753 712.998 232.631C1360.89 195.501 1292.46 610.046 871.472 496.845C608.619 426.166 -42.9043 429.362 175.588 712.091C351.444 939.648 1115.93 682.495 1191.92 927.875C1267.91 1173.25 426.562 1120.57 621.529 1330.43C816.497 1540.3 1689.42 1277.92 1679.92 1544.82C1670.42 1811.73 22.1138 1714.6 130.595 1977.74C239.077 2240.87 1051.44 2026.17 1161.42 2300.6C1249.41 2520.15 621.529 2409.84 565.035 2609.33C558.202 2657.41 633.228 2736.87 987.992 2670.09C1431.45 2586.6 1280.43 2854.79 1155.48 2894.67C875.505 2984.03 -297.879 2630.11 221.069 3022.05C740.017 3413.99 -225.886 3160.01 58.5855 3394"
-              stroke="#0081FA"
-              strokeWidth="10"
-            />
-            <circle cx="60.5" cy="15.5" r="15.5" fill="#0081FA" />
-            <circle cx="1191.5" cy="404.5" r="15.5" fill="#0081FA" />
-            <circle cx="132.5" cy="616.5" r="15.5" fill="#0081FA" />
-            <circle cx="1196.5" cy="950.5" r="15.5" fill="#0081FA" />
-            <circle cx="591.5" cy="1285.5" r="15.5" fill="#0081FA" />
-            <circle cx="1676.5" cy="1531.5" r="15.5" fill="#0081FA" />
-            <circle cx="125.5" cy="1956.5" r="15.5" fill="#0081FA" />
-            <circle cx="1168.5" cy="2331.5" r="15.5" fill="#0081FA" />
-            <circle cx="562.5" cy="2616.5" r="15.5" fill="#0081FA" />
-            <circle cx="62.5" cy="3395.5" r="15.5" fill="#0081FA" />
-          </svg>
+        {/* contact Form  */}
+
+        <div className=" pt-[50px] pb-[110px]">
+          <form onSubmit={handleSubmit} className="space-y-4 font-k2d">
+            <div className="flex flex-wrap gap-5">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email ID"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                required
+              />
+              <input
+                type="tel"
+                name="contact"
+                placeholder="Contact Number"
+                value={formData.contact}
+                onChange={handleChange}
+                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                required
+              />
+              <input
+                type="text"
+                name="place"
+                placeholder="Your Place"
+                value={formData.place}
+                onChange={handleChange}
+                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                required
+              />
+              {/* select Boxes  */}
+
+              <select
+                name="course"
+                value={formData.course}
+                onChange={handleChange}
+                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
+              >
+                <option value="" disabled className="text-gray-400">
+                  Course
+                </option>
+                <option
+                  value="digital-marketing"
+                  className="cursor-pointer"
+                >
+                  Digital Marketing
+                </option>
+                <option value="chatgpt">ChatGPT</option>
+                <option value="tally">Tally</option>
+              </select>
+
+              <select
+                name="classType"
+                value={formData.classType || ""}
+                onChange={handleChange}
+                className="w-[360px] h-[46px] p-2 border-2 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
+              >
+                <option value="" disabled>
+                  Class Type
+                </option>
+                <option value="Online">Online</option>
+                <option value="Offline">Offline</option>
+              </select>
+            </div>
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-[747px] h-[100px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
+              rows={4}
+            ></textarea>
+            <button
+              type="submit"
+              className="w-[747px] h-[63px] bg-bee-orange text-[15px] text-white py-2 rounded-[10px]"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        <div className="flex w-[20%]"></div>
       </div>
-    </>
+
+      {/* Part 2 */}
+      <div className="w-1/3">
+        <Image
+          src="/contact-page-vector.svg"
+          alt="Contact Page vector"
+          width={500}
+          height={500}
+        />
+        <div className="flex items-end gap-5 pt-[40px]">
+          <button className="text-[20px] text-white font-k2d bg-black w-[162px] h-[52px] rounded-[20px]">
+            {" "}
+            Click Here
+          </button>
+          <span className="text-[20] font-k2d">For Corporate enquiry</span>
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default Page;
+export default page;

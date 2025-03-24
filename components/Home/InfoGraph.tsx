@@ -41,7 +41,7 @@ function InfoGraph() {
             <div key={info.id} className="flex flex-col items-center group">
               <div className="   relative">
                 <div className="absolute right-[90px] top-[1px] z-[99]">
-                  <h1 className="text-[20px] font-k2d font-semibold w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center text-bee-orange">
+                  <h1 className="text-[20px] font-k2d font-semibold w-[60px] h-[60px] rounded-full bg-white flex items-center justify-center text-bee-orange shadow-2xl">
                     {info.id}
                   </h1>
                 </div>

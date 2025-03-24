@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function TheVision() {
   return (
-    <div className="bg-thevision-bg  bg-no-repeat bg-cover mt-[120px] w-full h-[1600px]  flex flex-col justify-between items-center">
+    <div className="bg-thevision-bg  bg-no-repeat bg-cover  w-full h-[1600px]  flex flex-col justify-between items-center">
       {/* Part 1  */}
       <div className=" pt-52">
         <div className="w-[400px] h-[543px] bg-bee-offwhite flex flex-col items-center sm:w-[860px]">
@@ -35,7 +35,7 @@ function TheVision() {
         </div>
         <div className="flex items-end overflow-hidden">
           <Image
-            src={"/vision-girl.png"}
+            src={"/thevisionvector.svg"}
             width={780}
             height={514}
             alt="the vision girl"
