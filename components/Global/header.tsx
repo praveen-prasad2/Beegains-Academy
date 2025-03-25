@@ -58,7 +58,7 @@ function Header() {
       {/* Mobile Menu Button with Image */}
       <button className="md:hidden p-2" onClick={() => setMenuOpen(!menuOpen)}>
         <Image
-          src={menuOpen ? "/close-icon.svg" : "/menu-icon.svg"}
+          src={menuOpen ? "/menu-icon.svg" : "/menu-icon.svg"}
           alt="Menu Icon"
           width={34}
           height={34}

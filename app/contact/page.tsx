@@ -162,7 +162,7 @@ function Page() {
           <span className="text-[20] font-k2d">For Corporate enquiry</span>
         </div>
       </div>
-    </div>
+    </div> 
   );
 }
 
