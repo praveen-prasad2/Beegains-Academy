@@ -4,17 +4,17 @@ import Image from "next/image";
 
 function TheVision() {
   return (
-    <div className="bg-thevision-bg  bg-no-repeat bg-cover  w-full h-[1600px]  flex flex-col justify-between items-center">
+    <div className="bg-thevision-bg  bg-no-repeat bg-cover gap-[50px]  w-full h-auto sm:h-[1500px]  flex flex-col sm:justify-between items-center">
       {/* Part 1  */}
-      <div className=" pt-52">
-        <div className="w-[400px] h-[543px] bg-bee-offwhite flex flex-col items-center sm:w-[860px]">
-          <div className=" w-[860px] h-[224px] bg-bee-orange flex justify-center items-center">
-            <h1 className="font-[800] font-k2d text-[50px] text-bee-offwhite sm:text-[100px]">
+      <div className="pt-[30px] sm:pt-52">
+        <div className="w-[282px] h-[210px] bg-bee-offwhite flex flex-col items-center sm:w-[860px] sm:h-[543px]">
+          <div className="w-[282px] h-[62px] sm:w-[860px] sm:h-[224px] bg-bee-orange flex justify-center items-center">
+            <h1 className=" font-[800] font-k2d text-[40px] text-bee-offwhite sm:text-[100px]">
               The Vision
             </h1>
           </div>
-          <div className="w-[616px] flex text-center items-center h-[319px]">
-            <p className="text-[17px] font-k2d font-normal text-justify sm:text-[20px]">
+          <div className="w-[616px] flex text-center justify-center items-center h-[319px]">
+            <p className="text-[13px] w-[229px] h-[72px] font-k2d font-normal text-justify sm:text-[20px] sm:w-[616px] sm:h-[72px]">
               To empower individuals with the knowledge and skills to excel in
               the dynamic world of digital marketing, enabling them to build
               successful careers.
@@ -23,13 +23,13 @@ function TheVision() {
         </div>
       </div>
       {/* Part 2  */}
-      <div className="flex">
+      <div className="flex flex-col  sm:flex-row sm:pt-[0px]">
         <div>
-          <h1 className="text-[50px] font-k2d font-[800] uppercase leading-[1] text-bee-offwhite pl-[110px] sm:text-[100px]">
-            Aquire The Mindset
-            <br /> Of Successful
+          <h1 className="text-[30px] pl-[20px] font-k2d font-[800] uppercase leading-[1] text-bee-offwhite sm:pl-[110px] sm:text-[80px]">
+            Aquire The <br />
+            Mindset Of <br /> Successful
             <br />
-            Digital Marketers
+            Digital <br /> Marketers
             <br /> Now
           </h1>
         </div>
