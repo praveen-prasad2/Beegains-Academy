@@ -54,6 +54,7 @@ function InfoGraph() {
                   width={150}
                   height={150}
                   alt="infographic image"
+                  unoptimized
                 />
                 <p className="text-[20px] font-k2d">{info.text}</p>
               </div>
