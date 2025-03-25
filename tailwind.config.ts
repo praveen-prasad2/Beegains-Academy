@@ -22,6 +22,7 @@ export default {
         "intensive-bg": "url('/intensive-bg.png')",
         "line-container-bg": "url('/line-container-bg.png')",
         "theresult-bg": "url('/theresult-bg.webp')",
+        "contact-page-bg": "url('/contact-page-vector.svg')",
       },
       fontFamily: {
         k2d: ["K2D", "sans-serif"],

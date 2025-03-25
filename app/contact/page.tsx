@@ -39,25 +39,25 @@ function Page() {
     });
   };
   return (
-    <div className="w-full h-auto flex  pt-[110px] pl-[110px] pr-[110px]">
-      <div className="w-2/3">
-        <h1 className="text-[70px] font-k2d font-[800] leading-[.8]">
+    <div className="w-full h-auto flex flex-col pt-[50px] pl-[20px] pr-[20px]  sm:flex-row sm:pt-[110px] sm:pl-[110px] sm:pr-[110px]">
+      <div className="sm:w-2/3">
+        <h1 className="text-[45px] sm:text-[70px] font-k2d font-[800] leading-[.8]">
           Enroll Your <br />
           Courses Today –<br />{" "}
-          <span className="text-[30px]  font-[600}">
+          <span className=" text-[20px] sm:text-[30px]  font-[600}">
             Take the Next Step in Your Career!
           </span>{" "}
         </h1>
         <br />
-        <p className="font-k2d text-[20px]">
+        <p className="text-[13px] font-k2d sm:text-[20px] capitalize">
           Register Now for Flexible Learning – Online & offline class are
-          Available. <br /> Unlock new skills and boost your career with our
-          expert-led courses.
+          Available. <br className=" hidden sm:block" /> Unlock new skills and
+          boost your career with our expert-led courses.
         </p>
 
         {/* contact Form  */}
 
-        <div className=" pt-[50px] pb-[110px]">
+        <div className=" pt-[50px]  flex bg-contact-page-bg bg-contain  bg-no-repeat bg-center sm:bg-none sm:pb-[110px]">
           <form onSubmit={handleSubmit} className="space-y-4 font-k2d">
             <div className="flex flex-wrap gap-5">
               <input
@@ -66,8 +66,7 @@ function Page() {
                 placeholder="Your Name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
-                required
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
               />
 
               <input
@@ -76,7 +75,7 @@ function Page() {
                 placeholder="Email ID"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
                 required
               />
               <input
@@ -85,7 +84,7 @@ function Page() {
                 placeholder="Contact Number"
                 value={formData.contact}
                 onChange={handleChange}
-                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
                 required
               />
               <input
@@ -94,7 +93,7 @@ function Page() {
                 placeholder="Your Place"
                 value={formData.place}
                 onChange={handleChange}
-                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px]"
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
                 required
               />
               {/* select Boxes  */}
@@ -103,7 +102,7 @@ function Page() {
                 name="course"
                 value={formData.course}
                 onChange={handleChange}
-                className="w-[360px] h-[46px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
+                className=" w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer sm:w-[360px] sm:h-[46px]"
               >
                 <option value="" disabled className="text-gray-400">
                   Course
@@ -119,7 +118,7 @@ function Page() {
                 name="classType"
                 value={formData.classType || ""}
                 onChange={handleChange}
-                className="w-[360px] h-[46px] p-2 border-2 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer sm:w-[360px] sm:h-[46px]"
               >
                 <option value="" disabled>
                   Class Type
@@ -133,12 +132,12 @@ function Page() {
               placeholder="Message"
               value={formData.message}
               onChange={handleChange}
-              className="w-[747px] h-[100px] p-2 border-2  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer"
+              className="w-[353px] h-[64px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] cursor-pointer sm:w-[747px] sm:h-[100px]"
               rows={4}
             ></textarea>
             <button
               type="submit"
-              className="w-[747px] h-[63px] bg-bee-orange text-[15px] text-white py-2 rounded-[10px]"
+              className="w-[353px] h-[41px] bg-bee-orange text-[15px] text-white py-2 rounded-[10px] sm:w-[747px]  sm:h-[63px]"
             >
               Submit
             </button>
@@ -147,22 +146,25 @@ function Page() {
       </div>
 
       {/* Part 2 */}
-      <div className="w-1/3">
+      <div className="w-full pb-[100px] sm:w-1/3">
         <Image
           src="/contact-page-vector.svg"
           alt="Contact Page vector"
           width={500}
           height={500}
+          className="hidden sm:block"
         />
-        <div className="flex items-end gap-5 pt-[40px]">
-          <button className="text-[20px] text-white font-k2d bg-black w-[162px] h-[52px] rounded-[20px]">
+        <div className="flex pt-[40px] items-center sm:items-end gap-5 sm:pt-[40px]">
+          <button className="text-[12px] w-[130px] h-[42px] text-white font-k2d bg-black sm:w-[162px] sm:h-[52px] sm:text-[20px] rounded-[20px]">
             {" "}
             Click Here
           </button>
-          <span className="text-[20] font-k2d">For Corporate enquiry</span>
+          <span className="text-[13px] sm:text-[20] font-k2d">
+            For Corporate enquiry
+          </span>
         </div>
       </div>
-    </div> 
+    </div>
   );
 }
 
