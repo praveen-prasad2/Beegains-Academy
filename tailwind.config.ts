@@ -16,6 +16,7 @@ export default {
         "design-bg": "url('/design-bg.png')",
         "understand-bg1": "url('/understanddm-image1.png')",
         "understand-bg2": "url('/understanddm-image2.png')",
+        "understand-bg2-mob": "url('/understanddm-bg-mob.png')",
         "detailed-bg": "url('/detailed-bg.png')",
         "footer-bg": "url('/footer-bg.png')",
         "enrollment-bg": "url('/enrollment-bg.png')",

@@ -5,19 +5,19 @@ function UnderstandDm() {
   return (
     <div>
       {/* Part 1  */}
-      <div className="bg-understand-bg1 w-screen h-[1069px] bg-cover bg bg-no-repeat pl-[110px] pr-[110px]  flex flex-col justify-center gap-[80px]">
+      <div className="bg-understand-bg1 bg-right w-screen h-auto gap-[20px]  pl-[20px] pr-[20px] pb-[100px]  sm:h-[1069px] sm:bg-cover sm:bg-left sm:bg-no-repeat sm:pl-[110px] sm:pr-[110px]  flex flex-col justify-center   sm:gap-[80px] ">
         <div>
-          <h1 className="text-[100px] text-bee-offwhite font-k2d font-[800] leading-[1.1]">
+          <h1 className="text-[40px] pt-[100px]  text-bee-offwhite font-k2d font-[800] leading-[1.1] sm:text-[100px] ">
             Understanding
             <br />
             Digital Marketing
           </h1>
         </div>
         <div>
-          <h1 className="text-[32px] font-k2d font-[600] text-white">
+          <h1 className="text-[26px] sm:text-[32px] font-k2d font-[600] text-white">
             The Importance of Digital Strategy & Building a Career:{" "}
           </h1>
-          <p className="text-[20px] font-k2d text-bee-offwhite">
+          <p className="text-[13px] sm:text-[20px] font-k2d text-bee-offwhite">
             Digital strategy is the backbone of any successful business today.
             It defines how a brand will connect with its audience online, from
             social media presence and website design to email marketing and
@@ -31,12 +31,12 @@ function UnderstandDm() {
         </div>
       </div>
       {/* Part 2  */}
-      <div className="bg-understand-bg2 bg-black/100 w-screen h-[958px] bg-cover bg bg-no-repeat pl-[110px] pr-[110px] flex flex-col justify-center gap-[80px]">
+      <div className="bg-understand-bg2-mob  bg-cover bg-repeat pl-[20px] pr-[20px] bg-black/100 w-screen  h-screen sm:bg-understand-bg2 sm:h-[958px] sm:bg-cover  sm:bg-no-repeat sm:pl-[110px] sm:pr-[110px] flex flex-col justify-center gap-[80px]">
         <div>
-          <h1 className="text-[32px]  font-k2d font-[600] text-white">
+          <h1 className="text-[26px] sm:text-[32px]  font-k2d font-[600] text-white">
             Creativity & Professionalism in Digital Marketing:
           </h1>
-          <p className="text-[20px] font-k2d text-bee-offwhite">
+          <p className="text-[13px]  font-k2d text-bee-offwhite sm:text-[20px]">
             Digital marketing demands a unique blend of creativity and
             professionalism. Its about more than just flashy ads; its about
             crafting compelling narratives, developing innovative campaigns that
@@ -46,10 +46,10 @@ function UnderstandDm() {
           </p>
         </div>
         <div>
-          <h1 className="text-[32px] font-k2d font-[600]  text-white">
+          <h1 className="text-[26px] sm:text-[32px]  font-k2d font-[600] text-white">
             The Value of Learning from an Industry Leader:
           </h1>
-          <p className="text-[20px] font-k2d text-bee-offwhite">
+          <p className="text-[13px]  font-k2d text-bee-offwhite sm:text-[20px]">
             Studying with an industry leader in digital marketing provides
             invaluable insights and unparalleled expertise. These leaders
             possess a deep understanding of the industrys best practices,
