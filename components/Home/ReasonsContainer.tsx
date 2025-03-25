@@ -4,7 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
 import Image from "next/image";
-import LineAnimation from "../Animation/LineAnimation"
+import LineAnimation from "../Animation/LineAnimation";
 
 // Register GSAP plugins
 if (typeof window !== "undefined") {
@@ -17,9 +17,9 @@ function ReasonsContainer() {
       {/* Section 2 and Line Animation */}
       <div className="w-screen ">
         <Image
-          src={"/beegains-academy-logo3.png"}
-          width={400}
-          height={180}
+          src={"/beegains-academy-logo4.png"}
+          width={450}
+          height={175}
           alt="Smiley"
           className="mt-[200px]"
         />
