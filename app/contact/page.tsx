@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { toast } from "sonner";
 import { FaCheckCircle } from "react-icons/fa";
+import Link from "next/link";
 
 import React, { useState } from "react";
 
@@ -155,10 +156,14 @@ function Page() {
           className="hidden sm:block"
         />
         <div className="flex pt-[40px] items-center sm:items-end gap-5 sm:pt-[40px]">
-          <button className="text-[12px] w-[130px] h-[42px] text-white font-k2d bg-black sm:w-[162px] sm:h-[52px] sm:text-[20px] rounded-[20px]">
+          <Link href={"/corporate-enquiry"}>
             {" "}
-            Click Here
-          </button>
+            <button className="text-[12px] w-[130px] h-[42px] text-white font-k2d bg-black sm:w-[162px] sm:h-[52px] sm:text-[20px] rounded-[20px]">
+              {" "}
+              Click Here
+            </button>
+          </Link>
+
           <span className="text-[13px] sm:text-[20] font-k2d">
             For Corporate enquiry
           </span>

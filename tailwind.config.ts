@@ -23,6 +23,7 @@ export default {
         "line-container-bg": "url('/line-container-bg.png')",
         "theresult-bg": "url('/theresult-bg.webp')",
         "contact-page-bg": "url('/contact-page-vector.svg')",
+        "corporate-enquiry-bg": "url('/corporate-enquiry-vector.svg')",
       },
       fontFamily: {
         k2d: ["K2D", "sans-serif"],
