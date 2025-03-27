@@ -5,18 +5,18 @@ function BonusSessions() {
   return (
     <>
       <div>
-        <div className="flex flex-row pt-[200px]">
+        <div className="flex flex-col pt-[200px] sm:flex-row ">
           {/* Part 1 */}
           <div className="w-1/2 flex flex-col">
-            <div className="pl-[110px] pr-[110px] flex flex-col justify-center relative">
+            <div className="pl-[20px] pr-[20px] flex flex-col justify-center relative sm:pl-[110px] sm:pr-[110px]">
               {/* Black Circle  */}
-              <div className="w-[250px] h-[250px] bg-black rounded-[100%] flex justify-center items-center absolute left-[400px] bottom-[80px] ">
-                <h1 className="text-bee-offwhite text-[32px] font-semibold font-k2d">
+              <div className="w-[83px] h-[83px] bg-black rounded-[100%] flex justify-center items-center absolute left-[130px] bottom-[30px] sm:w-[250px] sm:h-[250px] sm:left-[400px] sm:bottom-[80px]">
+                <h1 className="text-bee-offwhite text-[10px] font-semibold font-k2d sm:text-[32px]">
                   Integrated <br />
                   Throughout
                 </h1>
               </div>
-              <h1 className="text-[100px] font-k2d font-bold text-bee-orange leading-[.9]">
+              <h1 className="text-[40px] font-k2d font-bold text-bee-orange leading-[.9] sm:text-[100px]">
                 Bonus <br /> Sessions
               </h1>
             </div>
@@ -26,65 +26,64 @@ function BonusSessions() {
                 width={700}
                 height={741}
                 alt="bonus-sessions"
-                className="absolute z-[90] top-[40px]"
+                className="absolute z-[90] top-[40px] "
               />
             </div>
           </div>
 
           {/* Part 2 */}
 
-          <div className="w-1/2 pr-[110px] flex flex-wrap gap-5 ">
+          <div className="w-screen pl-[20px]  pr-[20px] pt-[210px] z-[99] flex flex-wrap gap-5 sm:pr-[110px]  sm:w-1/2 sm:pt-0   ">
             {/* card 1  */}
-            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
-              <h1 className="text-[28px] font-[700] font-k2d">
+            <div className="w-[146px] h-[203px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect sm:w-[285px] sm:h-[347px]">
+              <h1 className="text-[15px] font-[700] font-k2d sm:text-[28px]">
                 Creative Ads <br />
                 Workshop:
               </h1>
-              <li className="text-[20px]  font-k2d text-center">
+              <li className="text-[13px] text-left  font-k2d sm:text-center sm:text-[20px]">
                 Learn to create engaging and impactful ad campaigns
               </li>
             </div>
             {/* card 2  */}
-            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
-              <h1 className="text-[28px] font-[700] font-k2d">
-                Creative Ads <br />
-                Workshop:
+            <div className="w-[146px] h-[203px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect sm:w-[285px] sm:h-[347px]">
+              <h1 className="text-[15px] font-[700] font-k2d sm:text-[28px]">
+                Personal <br /> Branding:
               </h1>
-              <li className="text-[20px]  font-k2d text-center">
-                Learn to create engaging and impactful ad campaigns
+              <li className="text-[13px] text-left  font-k2d sm:text-center sm:text-[20px]">
+                Design personal logos, business cards, and portfolios.
               </li>
             </div>
             {/* card 3  */}
-            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
-              <h1 className="text-[28px] font-[700] font-k2d">
-                Creative Ads <br />
-                Workshop:
+            <div className="w-[146px] h-[203px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect sm:w-[285px] sm:h-[347px]">
+              <h1 className="text-[15px] font-[700] font-k2d sm:text-[28px]">
+                Creative <br /> Strategy:
               </h1>
-              <li className="text-[20px]  font-k2d text-center">
-                Learn to create engaging and impactful ad campaigns
+              <li className="text-[13px] text-left  font-k2d sm:text-center sm:text-[20px]">
+                Crafting effective strategies tailored to client needs and
+                industries.
               </li>
             </div>
-
             {/* card 4  */}
-            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
-              <h1 className="text-[28px] font-[700] font-k2d">
-                Creative Ads <br />
-                Workshop:
+            <div className="w-[146px] h-[203px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect sm:w-[285px] sm:h-[347px]">
+              <h1 className="text-[15px] font-[700] font-k2d sm:text-[28px]">
+                LinkedIn <br /> Masterclass::
               </h1>
-              <li className="text-[20px]  font-k2d text-center">
-                Learn to create engaging and impactful ad campaigns
+              <li className="text-[13px] text-left  font-k2d sm:text-center sm:text-[20px]">
+                Leverage LinkedIn to showcase your work and grow your profes
+                sional network.
               </li>
             </div>
           </div>
         </div>
+
         {/* Part 3 */}
         <div className="w-full h-screen pt-[50px] relative z-[99]">
-          <div className="w-full h-[300px] bg-[#23293C] pl-[110px] pr-[110px] pb-[30px] flex items-end ">
-            <h1 className="text-[100px] font-k2d font-[700] leading-[.9] text-bee-orange">
+          <div className="w-full h-[500px] bg-theresult-bg2 bg-cover bg-no-repeat pl-[110px] pr-[110px] pb-[30px] flex items-end ">
+            <h1 className="text-[100px] font-k2d font-[700] leading-[.9] text-white">
               The <br /> Result:
             </h1>
           </div>
-          <div className="w-full h-[437px] bg-[#3B4464] pl-[110px] pr-[110px] flex flex-col justify-center">
+          <div className="w-full h-[437px] bg-[#27AAE0] pl-[110px] pr-[110px] flex flex-col justify-center">
             {/* Result 1  */}
             <div className="flex items-center gap-5">
               <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>

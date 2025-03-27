@@ -24,6 +24,7 @@ export default {
         "intensive-bg": "url('/intensive-bg.png')",
         "line-container-bg": "url('/line-container-bg.png')",
         "theresult-bg": "url('/theresult-bg.svg')",
+        "theresult-bg2": "url('/the-result-bg.png')",
         "contact-page-bg": "url('/contact-page-vector.svg')",
         "corporate-enquiry-bg": "url('/corporate-enquiry-vector.svg')",
       },

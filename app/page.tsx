@@ -11,6 +11,7 @@ import ProgramOverview from "@/components/Home/ProgramOverview";
 import IntensiveDm from "@/components/Home/IntensiveDm";
 import BonusSessions from "@/components/Home/BonusSessions";
 import DmProgramOverview from "@/components/Home/DmProgramOverview";
+import Workshop from "@/components/Home/Workshop";
 
 function page() {
   return (
@@ -26,6 +27,7 @@ function page() {
       <Design />
       <ProgramOverview />
       <BonusSessions />
+      <Workshop />
     </div>
   );
 }

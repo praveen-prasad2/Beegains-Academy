@@ -1,21 +1,31 @@
-{/* Result 2  */}
-            <div className="flex items-center gap-10">
-              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
-              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
-                Real-world project experience
-              </p>
+{/* card 2  */}
+            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
+              <h1 className="text-[28px] font-[700] font-k2d">
+                Creative Ads <br />
+                Workshop:
+              </h1>
+              <li className="text-[20px]  font-k2d text-center">
+                Learn to create engaging and impactful ad campaigns
+              </li>
             </div>
-            {/* Result 3  */}
-            <div className="flex items-center gap-10">
-              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
-              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
-                Access to tools and templates for your portfolio
-              </p>
+            {/* card 3  */}
+            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
+              <h1 className="text-[28px] font-[700] font-k2d">
+                Creative Ads <br />
+                Workshop:
+              </h1>
+              <li className="text-[20px]  font-k2d text-center">
+                Learn to create engaging and impactful ad campaigns
+              </li>
             </div>
-            {/* Result 4  */}
-            <div className="flex items-center gap-10">
-              <div className="w-0 h-0 border-t-[22px] border-b-[22px] border-l-[23px] border-t-transparent border-b-transparent border-l-white animate-slightMove"></div>
-              <p className="text-[white] text-[28px] font-k2d w-[655px] h-[103px]  border-[1.5px] flex justify-start items-center p-5 hover:bg-bee-orange">
-                Placement assistance
-              </p>
+
+            {/* card 4  */}
+            <div className="w-[285px] h-[347px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect">
+              <h1 className="text-[28px] font-[700] font-k2d">
+                Creative Ads <br />
+                Workshop:
+              </h1>
+              <li className="text-[20px]  font-k2d text-center">
+                Learn to create engaging and impactful ad campaigns
+              </li>
             </div>
