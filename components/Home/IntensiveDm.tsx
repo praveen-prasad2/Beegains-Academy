@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function IntensiveDm() {
   return (
-    <div className="pr-[110px] w-full h-[860px] bg-line-container-bg bg-cover">
+    <div className=" w-full h-screen bg-line-container-bg bg-cover sm:pr-[110px]">
       <div className="flex justify-end pt-[30px]">
         <Image
           src={"/bee-white-icon.png"}
@@ -13,10 +13,10 @@ function IntensiveDm() {
           alt={"3month course image"}
         />
       </div>
-      <div className="h-[860px] flex flex-row items-center justify-center gap-[30px]">
-        <div>
+      <div className="h-screen w-full flex flex-col items-center justify-center gap-[30px] sm:flex-row">
+        <div className="hidden sm:block">
           <Image
-            src={"/hands.png"}
+            src={"/hands.webp"}
             width={885}
             height={449}
             alt={"3month course image"}
@@ -24,36 +24,39 @@ function IntensiveDm() {
         </div>
         {/* Part 2 */}
 
-        <div className="flex flex-col gap-8 sm:flex-col  sm:justify-between">
-          <div className="w-full sm:w-full">
-            <h1 className=" text-[33px]  font-k2d font-bold  uppercase leading-[1] sm:text-[80px] text-white">
+        <div className="flex flex-col pl-[20px] gap-8 sm:flex-col  sm:justify-between">
+          <div className="w-full ">
+            <h1 className=" text-[45px]  font-k2d font-bold  uppercase leading-[1] sm:text-[80px] text-white">
               AI-INTEGRATED <br /> DIGITAL <br /> MARKETING <br /> COURSE
             </h1>
-            <p className="text-[30px] font-k2d font-[600]">
+            <p className="text-[16px] font-k2d font-[600] sm:text-[30px]">
               {" "}
               (Students & Freshers)
             </p>
           </div>
 
-          <div className="w-full sm:w-1/3 flex flex-col ml-[100px]">
+          <div className="w-full sm:w-1/3 flex flex-col ">
             {/* 3 Month class  */}
 
-            <div className="flex items-center">
-              {/* left bar */}
-              {/* <div className="bg-bee-orange text-black  font-medium px-4 py-2  w-[260px] h-[55px] flex items-center">
-              <span className="font-semibold">Mode:</span> Offline Classes
-            </div> */}
-              {/* circle */}
-              <div className="ml-[-25px]">
-                <Image
-                  src={"/3months.png"}
-                  width={1000}
-                  height={222}
-                  alt={"3month course image"}
-                />
-              </div>
+            <div className="">
+              <Image
+                src={"/3months.webp"}
+                width={1000}
+                height={222}
+                alt={"3month course image"}
+                className="w-[250px] h-[110px] sm:w-full sm:h-full"
+              />
             </div>
           </div>
+        </div>
+        <div className="block w-full  sm:hidden">
+          <Image
+            src={"/hands.webp"}
+            width={900}
+            height={449}
+            alt={"3month course image"}
+            className="w-full"
+          />
         </div>
       </div>
 
