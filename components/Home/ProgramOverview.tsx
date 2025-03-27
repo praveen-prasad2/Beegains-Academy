@@ -19,6 +19,7 @@ function ProgramOverview() {
           className="mt-[-230px]"
         />
       </div>
+
       {/* Part 2 */}
       <div className="flex justify-center items-center pt-[80px] pl-[110px] pr-[110px]">
         <Image
@@ -28,6 +29,8 @@ function ProgramOverview() {
           alt="program overview infograph"
         />
       </div>
+
+
       {/* Part 3 */}
       <div className="flex justify-between pt-[80px] pl-[110px] pr-[110px]">
         <div>
@@ -55,6 +58,8 @@ function ProgramOverview() {
           </ul>
         </div>
       </div>
+
+
       {/* Part 4 */}
       <div className="pl-[110px] pr-[110px] flex justify-between  ">
         <div className="pt-[80px]">

@@ -23,7 +23,7 @@ export default {
         "enrollment-bg": "url('/enrollment-bg.png')",
         "intensive-bg": "url('/intensive-bg.png')",
         "line-container-bg": "url('/line-container-bg.png')",
-        "theresult-bg": "url('/theresult-bg.webp')",
+        "theresult-bg": "url('/theresult-bg.svg')",
         "contact-page-bg": "url('/contact-page-vector.svg')",
         "corporate-enquiry-bg": "url('/corporate-enquiry-vector.svg')",
       },
