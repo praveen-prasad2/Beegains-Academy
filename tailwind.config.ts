@@ -14,6 +14,7 @@ export default {
         "custom-bg": "url('/global-bg.svg')",
         "thevision-bg": "url('/vision-bg.png')",
         "design-bg": "url('/design-bg.png')",
+        "design-bg-mob": "url('/design-bg-mob.png')",
         "understand-bg1": "url('/understanddm-image1.png')",
         "understand-bg2": "url('/understanddm-image2.png')",
         "understand-bg2-mob": "url('/understanddm-bg-mob.png')",
