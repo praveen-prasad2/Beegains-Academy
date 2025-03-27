@@ -73,25 +73,28 @@ function InfoGraph() {
                   className="w-[70px] h-[70px] sm:w-[150px] sm:h-[150px]"
                   unoptimized
                 />
-                <p className="text-[13px] sm:text-[20px] font-k2d">{info.text}</p>
+                <p className="text-[13px] sm:text-[20px] font-k2d">
+                  {info.text}
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
       {/* Part 2  */}
-      <div className="w-full h-[728px] bg-[#fcf2e9] flex items-center justify-between pl-[110px] pr-[110px] pt-[50px]">
-        <h1 className="text-[100px] font-k2d leading-[1] font-[800] text-[#0241cc]">
+      <div className="w-full h-[600px] pl-[20px] pr-[20px] bg-[#fcf2e9] flex flex-col items-center justify-between sm:pl-[110px] sm:pr-[110px] pt-[50px] sm:flex-row sm:h-screen">
+        <h1 className="text-[50px] font-k2d leading-[1] font-[800] text-[#0241cc] sm:text-[100px]">
           THE <br />
           EXCITEMENT
           <br /> BEGINS
         </h1>
-        <div className="">
+        <div className="w-full h-full flex items-end justify-end">
           <Image
-            src={"/steps.png"}
-            width={929}
-            height={820}
+            src={"/steps.webp"}
+            width={503}
+            height={556}
             alt="the course animated image"
+            className="w-full h-[400px] sm:w-[829px] sm:h-[620px]"
           />
         </div>
       </div>
