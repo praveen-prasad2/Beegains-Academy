@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function TheVision() {
   return (
-    <div className="bg-thevision-bg  bg-no-repeat bg-cover gap-[50px]  w-full h-auto sm:h-[1500px]  flex flex-col sm:justify-between items-center">
+    <div className="bg-thevision-bg  bg-no-repeat bg-cover gap-[50px]  w-full h-auto sm:h-[1500px]  flex flex-col sm:justify-between items-center overflow-hidden">
       {/* Part 1  */}
       <div className="pt-[30px] sm:pt-52">
         <div className="w-[282px] h-[210px] bg-bee-offwhite flex flex-col items-center sm:w-[860px] sm:h-[543px]">

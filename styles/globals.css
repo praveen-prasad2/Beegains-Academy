@@ -65,7 +65,6 @@ body {
   background-size: contain !important;
   background-repeat: repeat !important;
   width: 100% !important;
-  /* overflow: hidden; */
 }
 
 /* Flipbook Styles */
@@ -73,8 +72,6 @@ body {
 #pnlControls {
   display: none !important;
 }
-
-
 
 /* @media (max-width: 480px) {
   body {

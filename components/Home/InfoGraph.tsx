@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function InfoGraph() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* Part 1  */}
       <div className="flex flex-col  h-screen w-full">
         {/* Header  */}

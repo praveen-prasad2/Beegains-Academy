@@ -12,7 +12,7 @@ function Design() {
         </h1>
       </div>
       <div>
-        <h1 className="text-[18px] font-k2d font-[600] w-[279px] border border-white p-[10px] leading-[.9] sm:text-[50px] sm:border-none sm:w-[615px] ">
+        <h1 className="text-[18px] font-k2d font-[600] w-[279px] border border-white p-[10px] leading-[.9] sm:text-[50px] sm:border-none sm:w-[615px] overflow-hidden">
           An intensive <br />
           Graphic Design Programme
         </h1>

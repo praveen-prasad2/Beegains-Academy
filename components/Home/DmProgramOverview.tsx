@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function DmProgramOverview() {
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* Part 1 */}
       <div className="pt-[50px]">
         {/* Section 1 */}

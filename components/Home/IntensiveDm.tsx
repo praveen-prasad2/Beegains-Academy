@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function IntensiveDm() {
   return (
-    <div className=" w-full h-screen bg-line-container-bg bg-cover sm:pr-[110px]">
+    <div className=" w-full h-screen bg-line-container-bg bg-cover sm:pr-[110px] overflow-hidden">
       <div className="flex justify-end pt-[30px]">
         <Image
           src={"/bee-white-icon.png"}
