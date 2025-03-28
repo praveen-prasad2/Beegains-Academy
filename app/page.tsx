@@ -12,6 +12,7 @@ import IntensiveDm from "@/components/Home/IntensiveDm";
 import BonusSessions from "@/components/Home/BonusSessions";
 import DmProgramOverview from "@/components/Home/DmProgramOverview";
 import Workshop from "@/components/Home/Workshop";
+import Certification from "@/components/Home/Certification";
 
 function page() {
   return (
@@ -28,6 +29,7 @@ function page() {
       <ProgramOverview />
       <BonusSessions />
       <Workshop />
+      <Certification />
     </div>
   );
 }

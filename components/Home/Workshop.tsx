@@ -48,17 +48,79 @@ function Workshop() {
       </div>
 
       {/* part 2 */}
-      <div className="w-full h-screen flex flex-col pl-[20px] pr-[20px] justify-normal items-center sm:pl-[110px] sm:pr-[110px] sm:flex-row sm:justify-around">
-        {/* section 1 */}
-        <div className="flex  w-[426px] gap-3 h-[555px]">
-          <Image
-            src={"/workshop-vector-1.svg"}
-            width={100}
-            height={100}
-            alt="bonus-sessions"
-            className=" w-[15px]  sm:w-[34px] sm:h-[555px]"
-          />
-          <div className="flex flex-col justify-around leading-[.9] pt-[15px]">
+      <div className="hidden sm:block">
+        <div className="w-full h-screen flex flex-col pl-[20px] pr-[20px] justify-normal items-center sm:pl-[110px] sm:pr-[110px] sm:flex-row sm:justify-around ">
+          {/* section 1 */}
+          <div className="flex  w-[426px] gap-3 h-[555px]">
+            <Image
+              src={"/workshop-vector-1.svg"}
+              width={100}
+              height={100}
+              alt="bonus-sessions"
+              className=" w-[15px]  sm:w-[34px] sm:h-[555px]"
+            />
+            <div className="flex flex-col justify-around leading-[.9] pt-[15px]">
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Client-Agency Equilibrium
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                AI and Ethics
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Performance Marketing & Ad Budget Optimization
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Growth Hacking Techniques
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Sensory Marketing in the Digital Age
+              </h1>
+            </div>
+          </div>
+          {/* section 2 */}
+
+          <div className="flex w-[426px] gap-3 h-[555px]  ">
+            <Image
+              src={"/workshop-vector-2.svg"}
+              width={100}
+              height={100}
+              alt="bonus-sessions"
+              className="w-[15px]  sm:w-[34px] sm:h-[555px]"
+            />
+            <div className="flex flex-col justify-around leading-[.9] pt-[15px]">
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Digital Marketing for Social Impact and Sustainability
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                WhatsApp & Conversational Marketing
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Influencer Marketing Strategy & Execution
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Metaverse & Web3 Marketing
+              </h1>
+              <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
+                Interactive Storytelling Digital Campaigns
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Section 2 Mob */}
+
+      <div className="block sm:hidden pt-[50px]">
+        <div className="flex  justify-center gap-3">
+          <div>
+            <Image
+              src={"/workshop-vector-mob.svg"}
+              width={100}
+              height={100}
+              alt="bonus-sessions"
+              className="w-[15px]  sm:w-[34px] sm:h-[555px]"
+            />
+          </div>
+          <div className="flex flex-col items-start justify-around leading-[.9] pt-[15px]">
             <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
               Client-Agency Equilibrium
             </h1>
@@ -74,18 +136,6 @@ function Workshop() {
             <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
               Sensory Marketing in the Digital Age
             </h1>
-          </div>
-        </div>
-        {/* section 2 */}
-        <div className="flex w-[426px] gap-3 h-[555px]">
-          <Image
-            src={"/workshop-vector-2.svg"}
-            width={100}
-            height={100}
-            alt="bonus-sessions"
-            className="w-[15px]  sm:w-[34px] sm:h-[555px]"
-          />
-          <div className="flex flex-col justify-around leading-[.9] pt-[15px]">
             <h1 className="text-[#6B6B6B] font-k2d text-[13px] font-[500] sm:text-[28px]">
               Digital Marketing for Social Impact and Sustainability
             </h1>
