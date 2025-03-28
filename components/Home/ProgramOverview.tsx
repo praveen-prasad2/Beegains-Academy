@@ -12,7 +12,7 @@ function ProgramOverview() {
           width={248}
           height={217}
           alt="pentool"
-          className="mt-[-99px] block sm:hidden"
+          className="mt-[-99px] block sm:hidden ml-[100px]"
         />
         <h1 className="text-[40px] font-k2d font-[800] text-bee-blue leading-[1] sm:text-[100px]">
           PROGRAM <br />
@@ -23,7 +23,7 @@ function ProgramOverview() {
           width={574}
           height={502}
           alt="pentool"
-          className="mt-[-230px] hidden sm:block"
+          className="mt-[-230px] hidden sm:block "
         />
       </div>
 

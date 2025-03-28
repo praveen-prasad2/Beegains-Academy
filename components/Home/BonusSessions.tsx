@@ -10,7 +10,7 @@ function BonusSessions() {
           <div className="w-1/2 flex flex-col">
             <div className="pl-[20px] pr-[20px] flex flex-col justify-center relative sm:pl-[110px] sm:pr-[110px]">
               {/* Black Circle  */}
-              <div className="w-[83px] h-[83px] bg-black rounded-[100%] flex justify-center items-center absolute left-[130px] bottom-[30px] sm:w-[250px] sm:h-[250px] sm:left-[400px] sm:bottom-[80px]">
+              <div className="w-[83px] h-[83px] bg-black rounded-[100%] flex justify-center items-center absolute left-[150px] bottom-[30px] sm:w-[250px] sm:h-[250px] sm:left-[400px] sm:bottom-[80px]">
                 <h1 className="text-bee-offwhite text-[10px] font-semibold font-k2d sm:text-[32px]">
                   Integrated <br />
                   Throughout
@@ -26,14 +26,14 @@ function BonusSessions() {
                 width={700}
                 height={741}
                 alt="bonus-sessions"
-                className="absolute  top-[40px] "
+                className="absolute  top-[-40px] left-[170px]  sm:left-0  sm:top-[40px]"
               />
             </div>
           </div>
 
           {/* Part 2 */}
 
-          <div className="w-screen pl-[20px] pb-[60px] pr-[20px] pt-[210px] z-[99] flex flex-wrap gap-5 sm:pr-[110px]  sm:w-1/2 sm:pt-0   ">
+          <div className="w-screen pl-[20px] pb-[60px] pr-[20px] pt-[150px] z-[99] flex  flex-wrap justify-center gap-5 sm:pr-[110px]  sm:w-1/2 sm:pt-0   ">
             {/* card 1  */}
             <div className="w-[146px] h-[203px] bg-bee-orange rounded-[10px] flex flex-col justify-start items-center p-7 hover:animate-hoverEffect sm:w-[285px] sm:h-[347px]">
               <h1 className="text-[15px] font-[700] font-k2d sm:text-[28px]">
