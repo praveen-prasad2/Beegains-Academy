@@ -27,6 +27,7 @@ export default {
         "theresult-bg2": "url('/the-result-bg.png')",
         "contact-page-bg": "url('/contact-page-vector.svg')",
         "corporate-enquiry-bg": "url('/corporate-enquiry-vector.svg')",
+        "popup-bg": "url('/popup-bg.png')",
       },
       fontFamily: {
         k2d: ["K2D", "sans-serif"],
