@@ -11,6 +11,7 @@ function BrochurePopup() {
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const { value } = event.target;
+
     if (/^\d$/.test(value)) {
       if (index < inputRefs.current.length - 1) {
         inputRefs.current[index + 1]?.focus();
@@ -24,7 +25,8 @@ function BrochurePopup() {
     index: number,
     event: React.KeyboardEvent<HTMLInputElement>
   ) => {
-    const target = event.target as HTMLInputElement; // Explicitly cast event.target
+    const target = event.target as HTMLInputElement;
+
     if (event.key === "Backspace" && target.value === "" && index > 0) {
       inputRefs.current[index - 1]?.focus();
     }
@@ -52,7 +54,7 @@ function BrochurePopup() {
             required
           />
           <input
-            type="mail"
+            type="email"
             name="mail"
             placeholder="Mail ID"
             className="w-[285px] h-[38px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[8px] sm:w-[349px] sm:h-[42px]"
@@ -74,6 +76,8 @@ function BrochurePopup() {
                     type="text"
                     maxLength={1}
                     className="w-10 h-10 text-center border border-[#B4B4B4] rounded-lg focus:outline-none focus:ring-2 focus:ring-bee-orange appearance-none"
+                    onChange={(event) => handleChange(index, event)}
+                    onKeyDown={(event) => handleKeyDown(index, event)}
                   />
                 ))}
             </div>
@@ -84,7 +88,7 @@ function BrochurePopup() {
                 Resend
               </a>
             </p>
-            <button className="mt-4 w-[190px] h-[38px] bg-bee-orange text-white  rounded-[8px] font-semibold hover:bg-orange-600">
+            <button className="mt-4 w-[190px] h-[38px] bg-bee-orange text-white rounded-[8px] font-semibold hover:bg-orange-600">
               Verify
             </button>
           </div>

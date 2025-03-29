@@ -13,11 +13,13 @@ import BonusSessions from "@/components/Home/BonusSessions";
 import DmProgramOverview from "@/components/Home/DmProgramOverview";
 import Workshop from "@/components/Home/Workshop";
 import Certification from "@/components/Home/Certification";
+import FixedSocial from "@/components/Global/FixedSocial";
 
 function page() {
   return (
     <div>
       <Hero />
+      <FixedSocial />
       <ReasonsContainer />
       <TheVision />
       <InfoGraph />
