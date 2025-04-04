@@ -14,7 +14,7 @@ if (typeof window !== "undefined") {
 
 function ReasonsContainer() {
   return (
-    <div className="flex flex-col h-[1471px] gap-[100px] pl-[20px] pr-[20px] bg-line-container-bg bg-cover bg-repeat sm:h-[1800px] overflow-hidden sm:pl-[110px]">
+    <div className="flex flex-col h-[1480px] justify-center gap-[100px] pl-[20px] pr-[20px] bg-line-container-bg bg-cover bg-repeat sm:h-[1800px] overflow-hidden sm:pl-[110px]">
       {/* Section 2 and Line Animation */}
       <div className="w-full">
         <Image
@@ -22,7 +22,7 @@ function ReasonsContainer() {
           width={450}
           height={175}
           alt="Smiley"
-          className="mt-[200px] w-[196px] h-[72px] sm:w-[450px] sm:h-[175px]"
+          className="mt-[0px] w-[196px] h-[72px] sm:w-[450px] sm:h-[175px]"
         />
 
         <h1 className="text-[15px] leading-[1] capitalize sm:text-[25px] font-k2d ">

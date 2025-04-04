@@ -8,8 +8,13 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <div className="w-screen h-[700px] flex flex-col bg-footer-bg bg-cover bg-no-repeat  pl-[10px] pr-[10px]  sm:pl-[110px] sm:pr-[110px]">
-      <div className="flex justify-center items-center pt-[130px]">
+    <div className="w-screen h-[780px] flex flex-col bg-footer-bg bg-cover bg-no-repeat  pl-[10px] pr-[10px]  sm:pl-[110px] sm:pr-[110px]">
+      <div className="flex justify-between items-center pt-[130px]">
+        <h1 className="text-[80px] font-k2d font-[700] text-white leading-[.9]">
+          JOIN <br />
+          NOW <br />
+          AND <br /> BECOME <br /> A PRO.
+        </h1>
         <Image
           src={"/footer-logo.png"}
           width={698}

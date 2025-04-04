@@ -11,93 +11,118 @@ if (typeof window !== "undefined") {
 }
 
 function LineAnimationMob() {
+  const containerRef = useRef<HTMLDivElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
-    if (!pathRef.current) return;
+    // Clean up function to prevent memory leaks
+    const cleanup = () => {
+      // Kill any active ScrollTrigger instances to prevent duplicates
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
 
-    const path = pathRef.current as SVGPathElement;
+    if (!pathRef.current || !containerRef.current) return cleanup;
+
+    const path = pathRef.current;
     const pathLength = path.getTotalLength();
 
+    // Initial state - line is invisible
     gsap.set(path, {
       strokeDasharray: pathLength,
       strokeDashoffset: pathLength,
     });
 
-    gsap.to(path, {
-      strokeDashoffset: 0,
-      ease: "none",
+    // Create the animation
+    const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: ".line-container",
-        start: "top center",
-        end: "bottom bottom",
-        scrub: true,
+        trigger: containerRef.current,
+        start: "top 90%", // Start animation when the top of container is 20% from viewport top
+        end: "bottom 80%", // End animation when bottom of container is 80% from viewport top
+        scrub: 0.5, // Smooth scrubbing, takes 0.5 seconds to catch up to scroll position
+        pin: false, // Don't pin the container - this was causing issues
+        // markers: true, // For debugging - remove in production
       },
     });
+
+    // Animate the line drawing
+    tl.to(path, {
+      strokeDashoffset: 0,
+      ease: "power1.inOut",
+      duration: 1,
+    });
+
+    // Add animations for each reason box
+    const reasonElements = document.querySelectorAll(".reason-box");
+    reasonElements.forEach((el, index) => {
+      tl.fromTo(
+        el,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.1,
+        },
+        index * 0.2 // Stagger the animations
+      );
+    });
+
+    return cleanup;
   }, []);
 
   const reasonsData = [
     {
       title: "The Environment:",
       description:
-        "Exposure to a high energy environment full of  working professionals showcasing their best work  day in day out for national and international  clients. We have writers, graphic artists, animators,  software developers, CGI artists and of course,  seasoned digital marketers.",
-      style: {
-        left: "28%",
-        top: "13%",
-      },
+        "Exposure to a high energy environment full of working professionals showcasing their best work day in day out for national and international clients. We have writers, graphic artists, animators, software developers, CGI artists and of course, seasoned digital marketers.",
+      style: { left: "55%", top: "4%" },
+      width: "324px",
     },
     {
       title: "Industry Exposure:",
       description:
-        "Forge valuable connections with industry  leaders. Our academy has a strong network  of brands, offering potential exposure and  learning of unmatched quality.",
-      style: {
-        left: "69%",
-        top: "37%",
-      },
+        "Forge valuable connections with industry leaders. Our academy has a strong network of brands, offering potential exposure and learning of unmatched quality.",
+      style: { left: "98%", top: "20%" },
+      width: "157px",
     },
     {
       title: "Practical, Hands-On Learning:",
       description:
-        "Forge valuable connections with industry  leaders. Our academy has a strong network  of brands, offering potential exposure and  learning of unmatched quality.",
-      style: {
-        left: "83%",
-        top: "54%",
-      },
+        "Forge valuable connections with industry  leaders. Our academy has a strong network  of brands, offering potential exposure and  learning of unmatched quality",
+      style: { left: "60%", top: "47%" },
+      width: "281px",
     },
     {
       title: "Focus On Innovation & Creativity:",
       description:
         "Stay ahead of the curve with a curriculum that emphasizes  cutting-edge digital marketing trends and technologies. Explore  emerging areas like AI, VR/AR, and influencer marketing.",
-      style: {
-        left: "22%",
-        top: "71%",
-      },
+      style: { left: "64%", top: "63%" },
+      width: "271px",
     },
     {
       title: "Expert Faculty:",
       description:
-        "Learn from experienced industry professionals  who bring real-world expertise to the class room. Our faculty comprises seasoned digital  marketers, strategists, and creative  professionals.",
-      style: {
-        left: "82%",
-        top: "94%",
-      },
+        "Learn from experienced industry professionals  who bring real-world expertise to the class room. Our faculty comprises seasoned digital  marketers, strategists, and creative  professionals",
+      style: { left: "50%", top: "84%" },
+      width: "310px",
     },
   ];
-
   return (
-    <div className="line-container  pt-10 relative ">
+    <div ref={containerRef} className="line-container relative min-h-[1200px]">
       {/* Content boxes */}
       <div className="absolute inset-0 w-full h-full font-k2d">
         {reasonsData.map((reason, index) => (
           <div
             key={index}
-            className="absolute w-[90%] max-w-[650px] p-4 rounded-lg transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 z-10"
+            className="reason-box absolute w-[90%] max-w-[650px] p-4 rounded-lg transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 z-10 opacity-0"
             style={reason.style}
           >
-            <h3 className="text-[20px] text-bee-offwhite md:text-3xl lg:text-[36px] font-bold mb-2 sm:text-[40px]">
+            <h3 className="text-[18px] text-bee-offwhite md:text-3xl lg:text-[36px] font-bold mb-2 sm:text-[40px]">
               {reason.title}
             </h3>
-            <p className="text-base w-[500px] md:text-lg lg:text-[18px]">
+            <p
+              className="text-[13px] md:text-lg lg:text-[18px]"
+              style={{ width: reason.width }}
+            >
               {reason.description}
             </p>
           </div>
@@ -105,12 +130,11 @@ function LineAnimationMob() {
       </div>
 
       {/* SVG Path */}
-
       <svg
         viewBox="0 0 358 1028"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-[358px] h-[1028px]"
+        className="w-full max-w-[358px] h-auto mx-auto"
         preserveAspectRatio="xMidYMid meet"
       >
         <circle cx="10" cy="10" r="10" fill="#0081FA" />
