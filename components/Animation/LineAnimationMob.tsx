@@ -36,11 +36,11 @@ function LineAnimationMob() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "top 90%", // Start animation when the top of container is 20% from viewport top
-        end: "bottom 80%", // End animation when bottom of container is 80% from viewport top
-        scrub: 0.5, // Smooth scrubbing, takes 0.5 seconds to catch up to scroll position
-        pin: false, // Don't pin the container - this was causing issues
-        // markers: true, // For debugging - remove in production
+        start: "top 90%", 
+        end: "bottom 80%", 
+        scrub: 0.5, 
+        pin: false, 
+       
       },
     });
 
