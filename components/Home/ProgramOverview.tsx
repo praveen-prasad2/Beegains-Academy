@@ -4,9 +4,9 @@ import Image from "next/image";
 
 function ProgramOverview() {
   return (
-    <div className="w-screen ">
+    <div className="w-full ">
       {/* Part 1 */}
-      <div className="flex flex-col   pl-[20px] pr-[20px] w-screen sm:pl-[110px] sm:pr-[110px] sm:flex-row sm:gap-[100px] sm:items-center">
+      <div className="flex flex-col   pl-[20px] pr-[20px] w-full sm:pl-[110px] sm:pr-[110px] sm:flex-row sm:gap-[100px] sm:items-center">
         <Image
           src={"/Pentool.gif"}
           width={248}

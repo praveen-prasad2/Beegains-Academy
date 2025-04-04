@@ -3,7 +3,7 @@ import React from "react";
 
 function Design() {
   return (
-    <div className="w-screen h-[560px] pr-[20px] pl-[20px]  bg-design-bg-mob  bg-cover bg-no-repeat capitalize text-bee-offwhite flex flex-col justify-around items-start sm:justify-around  sm:items-center sm:bg-design-bg sm:flex-row sm:pr-[110px] sm:pl-[110px] sm:h-screen">
+    <div className="w-full h-[560px] pr-[20px] pl-[20px]  bg-design-bg-mob  bg-cover bg-no-repeat capitalize text-bee-offwhite flex flex-col justify-around items-start sm:justify-around overflow-hidden  sm:items-center sm:bg-design-bg sm:flex-row sm:pr-[110px] sm:pl-[110px] sm:h-screen">
       <div>
         <h1 className="text-[70px]  font-k2d font-[800] leading-[.9] sm:text-[180px]">
           Design

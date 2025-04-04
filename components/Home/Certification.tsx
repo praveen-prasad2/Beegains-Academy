@@ -6,7 +6,7 @@ function Certification() {
     <div>
       {" "}
       {/* Part 3 */}
-      <div className="w-full h-screen pt-[50px] relative z-[99]">
+      <div className="w-full h-screen pt-[50px] relative z-[98]">
         <div className="w-full h-[190px] pl-[20px]  pr-[20px] pb-[10px] bg-center  bg-theresult-bg2 bg-cover bg-no-repeat sm:pl-[110px] sm:pr-[110px] sm:pb-[30px] flex items-end sm:h-[500px] ">
           <h1 className="text-[40px] font-k2d font-[700] leading-[.9] text-white sm:text-[100px]">
             The <br /> Result:

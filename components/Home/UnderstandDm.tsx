@@ -3,9 +3,9 @@ import React from "react";
 
 function UnderstandDm() {
   return (
-    <div>
+    <div className="flex flex-col gap-0">
       {/* Part 1  */}
-      <div className="bg-understand-bg1 bg-right w-screen h-auto gap-[20px]  pl-[20px] pr-[20px] pb-[100px]  sm:h-[1069px] sm:bg-cover sm:bg-left sm:bg-no-repeat sm:pl-[110px] sm:pr-[110px]  flex flex-col justify-center   sm:gap-[80px] ">
+      <div className="bg-understand-bg1 bg-right w-full h-auto gap-[20px]  pl-[20px] pr-[20px] pb-[100px]  sm:h-[1069px] sm:bg-cover sm:bg-left sm:bg-no-repeat sm:pl-[110px] sm:pr-[110px]  flex flex-col justify-center   sm:gap-[80px] ">
         <div>
           <h1 className="text-[40px] pt-[100px]  text-bee-offwhite font-k2d font-[800] leading-[1.1] sm:text-[100px] ">
             Understanding
@@ -31,7 +31,7 @@ function UnderstandDm() {
         </div>
       </div>
       {/* Part 2  */}
-      <div className="bg-understand-bg2-mob  bg-cover bg-repeat pl-[20px] pr-[20px] bg-black/100 w-screen  h-screen sm:bg-understand-bg2 sm:h-[958px] sm:bg-cover  sm:bg-no-repeat sm:pl-[110px] sm:pr-[110px] flex flex-col justify-center gap-[80px]">
+      <div className="bg-understand-bg2-mob  bg-cover bg-repeat pl-[20px] pr-[20px] bg-black/100 w-full  h-screen sm:bg-understand-bg2 sm:h-[958px] sm:bg-cover  sm:bg-no-repeat sm:pl-[110px] sm:pr-[110px] flex flex-col justify-center gap-[80px]">
         <div>
           <h1 className="text-[26px] sm:text-[32px]  font-k2d font-[600] text-white">
             Creativity & Professionalism in Digital Marketing:

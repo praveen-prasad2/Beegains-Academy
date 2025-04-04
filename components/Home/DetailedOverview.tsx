@@ -3,7 +3,7 @@ import React from "react";
 
 function DetailedOverview() {
   return (
-    <div className="w-[screen] h-[1800px] bg-detailed-bg bg-cover bg-no-repeat pl-[110px] pr-[110px] flex justify-between">
+    <div className="w-full h-[1800px] bg-detailed-bg bg-cover bg-no-repeat pl-[110px] pr-[110px] flex justify-between">
       {/* Part 1  */}
       <div className="flex flex-col justify-center">
         {/* Month 1  */}

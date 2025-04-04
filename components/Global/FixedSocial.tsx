@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function FixedSocial() {
   return (
-    <div className="fixed right-[40px] bottom-[20px] w-[44px] h-[87px] sm:w-[72px ] sm:h-[143px]">
+    <div className="fixed right-[40px] bottom-[20px] z-[99] w-[44px] h-[87px] sm:w-[72px ] sm:h-[143px]">
       <div className="w-[44px] h-[87px]  bg-bee-offwhite bg-opacity-8 0 rounded-[50px] flex flex-col justify-evenly items-center sm:w-[72px] sm:h-[143px] ">
         <Link href={"#"}>
           <Image

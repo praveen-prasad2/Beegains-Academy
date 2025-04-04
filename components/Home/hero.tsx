@@ -4,7 +4,7 @@ import React from "react";
 
 function hero() {
   return (
-    <div className="bg-hero-bg bg-top bg-cover bg-no-repeat h-screen w-screen flex flex-row justify-center items-center overflow-hidden">
+    <div className="bg-hero-bg bg-top bg-cover bg-no-repeat h-screen w-full flex flex-row justify-center items-center overflow-hidden">
       <iframe
         allowFullScreen
         scrolling="no"

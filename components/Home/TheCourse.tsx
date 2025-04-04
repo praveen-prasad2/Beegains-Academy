@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function TheCourse() {
   return (
-    <div className="w-screen h-auto flex flex-col justify-end gap-10 overflow-hidden">
+    <div className="w-full h-auto flex flex-col justify-end gap-10 overflow-hidden">
       <div className="pl-[20px] pr-[20px] pt-[50px] sm:pl-[110px] sm:pr-[110px] sm:pt-[120px]">
         <h1 className="text-[50px] font-k2d font-[800] text-bee-orange sm:text-[100px]">
           The Course
