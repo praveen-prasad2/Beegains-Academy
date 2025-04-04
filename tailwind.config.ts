@@ -28,6 +28,7 @@ export default {
         "contact-page-bg": "url('/contact-page-vector.svg')",
         "corporate-enquiry-bg": "url('/corporate-enquiry-vector.svg')",
         "popup-bg": "url('/popup-bg.png')",
+        "footer-bg-mob": "url('/footer-bg-mob.svg')",
       },
       fontFamily: {
         k2d: ["K2D", "sans-serif"],
