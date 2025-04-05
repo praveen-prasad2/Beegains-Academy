@@ -10,9 +10,11 @@ import React, { useState } from "react";
 
 function Page() {
   const [formData, setFormData] = useState({
-    name: "",
+    firstname: "",
+    secondname: "",
     email: "",
     contact: "",
+    whatsappnumber: "",
     place: "",
     course: "",
     classType: "",
@@ -27,18 +29,51 @@ function Page() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    toast("Thank you! We'll respond shortly.", {
-      icon: <FaCheckCircle size={20} className="text-bee-orange" />,
-      style: {
-        background: "#fff", // Orange
-        color: "#000",
-        fontWeight: "bold",
-      },
-    });
+  
+    // Mobile number validation
+    if (
+      formData.contact.length < 10 ||
+      formData.whatsappnumber.length < 10 ||
+      !/^\d+$/.test(formData.contact) ||
+      !/^\d+$/.test(formData.whatsappnumber)
+    ) {
+      toast("Please enter valid 10-digit phone numbers.", { icon: "📱" });
+      return;
+    }
+  
+    try {
+      const res = await fetch("/api/send-student-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      const result = await res.json();
+      if (result.success) {
+        toast("Thank you! We'll respond shortly.", {
+          icon: <FaCheckCircle size={20} className="text-bee-orange" />,
+          style: {
+            background: "#fff",
+            color: "#000",
+            fontWeight: "bold",
+          },
+        });
+  
+        setTimeout(() => {
+          window.location.reload();
+        }, 2000);
+      } else {
+        toast("Something went wrong!", { icon: "❌" });
+      }
+    } catch (error) {
+      toast("Server error. Try again later.", { icon: "⚠️" });
+    }
   };
+
   return (
     <div className="w-full h-auto flex flex-col pt-[50px] pl-[20px] pr-[20px]  sm:flex-row sm:pt-[110px] sm:pl-[110px] sm:pr-[110px]">
       <div className="sm:w-2/3">
@@ -63,9 +98,17 @@ function Page() {
             <div className="flex flex-wrap gap-5">
               <input
                 type="text"
-                name="name"
-                placeholder="Your Name"
-                value={formData.name}
+                name="firstname"
+                placeholder="First Name"
+                value={formData.firstname}
+                onChange={handleChange}
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
+              />
+              <input
+                type="text"
+                name="secondname"
+                placeholder="Second Name"
+                value={formData.secondname}
                 onChange={handleChange}
                 className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60 border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
               />
@@ -84,6 +127,15 @@ function Page() {
                 name="contact"
                 placeholder="Contact Number"
                 value={formData.contact}
+                onChange={handleChange}
+                className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
+                required
+              />
+              <input
+                type="tel"
+                name="whatsappnumber"
+                placeholder="Whatsapp Number"
+                value={formData.whatsappnumber}
                 onChange={handleChange}
                 className="w-[353px] h-[41px] p-2 border-2 bg-white bg-opacity-60  border-[#B4B4B4] text-[15px] focus:border-2 focus:outline-none rounded-[15px] sm:w-[360px] sm:h-[46px]"
                 required
