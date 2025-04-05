@@ -32,47 +32,30 @@ function Page() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
-    // Mobile number validation
-    if (
-      formData.contact.length < 10 ||
-      formData.whatsappnumber.length < 10 ||
-      !/^\d+$/.test(formData.contact) ||
-      !/^\d+$/.test(formData.whatsappnumber)
-    ) {
-      toast("Please enter valid 10-digit phone numbers.", { icon: "📱" });
-      return;
-    }
-  
     try {
-      const res = await fetch("/api/send-student-form", {
+      const response = await fetch("/api/enroll", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
   
-      const result = await res.json();
-      if (result.success) {
-        toast("Thank you! We'll respond shortly.", {
-          icon: <FaCheckCircle size={20} className="text-bee-orange" />,
-          style: {
-            background: "#fff",
-            color: "#000",
-            fontWeight: "bold",
-          },
-        });
+      const result = await response.json();
+      console.log("Saved to DB:", result);
   
-        setTimeout(() => {
-          window.location.reload();
-        }, 2000);
-      } else {
-        toast("Something went wrong!", { icon: "❌" });
-      }
-    } catch (error) {
-      toast("Server error. Try again later.", { icon: "⚠️" });
+      toast("Thank you! We'll respond shortly.", {
+        icon: <FaCheckCircle size={20} className="text-bee-orange" />,
+        style: {
+          background: "#fff", // Orange
+          color: "#000",
+          fontWeight: "bold",
+        },
+      });
+    } catch (err) {
+      console.error("Error:", err);
+      toast("Something went wrong");
     }
   };
+  
 
   return (
     <div className="w-full h-auto flex flex-col pt-[50px] pl-[20px] pr-[20px]  sm:flex-row sm:pt-[110px] sm:pl-[110px] sm:pr-[110px]">
