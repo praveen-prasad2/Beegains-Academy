@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import React from "react";
 
-function BrochurePopup() {
+function BrochurePopup({ onClose }: { onClose: () => void }) {
   const inputRefs = useRef<(HTMLInputElement | null)[]>([]);
 
   const handleChange = (
@@ -33,8 +33,16 @@ function BrochurePopup() {
   };
 
   return (
-    <div className="w-[337px] h-[485px] bg-white bg-popup-bg bg-cover bg-no-repeat border-black border rounded-[15px] flex flex-col justify-center items-center font-k2d sm:w-[659px] sm:h-[552px]">
-      <div className="flex flex-col justify-center items-center">
+    <div className="relative w-[337px] h-[485px] bg-white bg-popup-bg bg-cover bg-no-repeat border-black border rounded-[15px] flex flex-col justify-center items-center font-k2d sm:w-[659px] sm:h-[552px]">
+      {/* Close Button */}
+      <button
+        onClick={onClose}
+        className="absolute top-4 right-4 text-gray-700 hover:text-red-500 text-2xl font-bold"
+      >
+        &times;
+      </button>
+
+      <div className="flex flex-col justify-center items-center px-4">
         <h1 className="text-[15px] font-k2d font-[600] text-center sm:text-[20px]">
           Download Our Brochure –<br /> Enter Your Details
         </h1>
